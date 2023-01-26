@@ -1,0 +1,36 @@
+/*Navbar CSS*/
+.navbar {
+  background-color: white;
+  overflow: hidden;
+  border-bottom: solid black 5px;
+  padding-bottom: 0px;
+  height: 90px;
+}
+
+.navbar a {
+  display: flex;
+  float: left;
+  color: black;
+  padding: 22px 26px;
+  font-size: 40px;
+}
+.navbar .active {
+  background-color: black;
+  color: white;
+}
+
+/*Header Text*/
+.header {
+  background-color: white;
+  color: black;
+}
+
+/*Weapon Navbar CSS*/
+
+/*Weapon Flexbox CSS*/
+.weapon-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}

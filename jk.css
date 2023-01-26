@@ -21,7 +21,7 @@
     background-color: #ece8e1;
   }
   
-  .navbar {
+  /* .navbar {
     background-color: black;
     overflow: hidden;
     padding-bottom: 0px;
@@ -48,7 +48,7 @@
   .menu:hover {
     background-color: black;
     color: #ff4655;
-  }
+  } */
   
   /*Header Text*/
   .headertext {
@@ -61,43 +61,3 @@
     top: 20%;
     padding: 5% 5% 5%;
   }
-  
-  /* .header {
-      top: 8%;
-      left: 6%;
-      text-align: left;
-      border-bottom: solid black 5px;
-      width: 88%;
-      } */
-  
-  /*Weapon Navbar CSS*/
-  
-  /*Weapon Flexbox CSS*/
-  .weapon-flex {
-    width: 80%;
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    left: 10%;
-    right: 10%;
-  }
-  
-  .card {
-    width: 50%;
-    height: auto;
-  }
-  /*Font CSS*/
-  .valotext {
-    color: black;
-    font-family: "ValoFont";
-  }
-  .text {
-    color: black;
-    font-family: "TungstenBold", sans-serif;
-  }
-  a {
-    text-decoration: none;
-  }
-  

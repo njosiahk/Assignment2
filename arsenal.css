@@ -26,6 +26,10 @@ body {
   overflow: hidden;
   padding-bottom: 0px;
   height: 90px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 100;
 }
 
 .navbar a {
@@ -62,13 +66,9 @@ nav {
   padding: 5% 5% 5%;
 }
 
-/* .header {
-    top: 8%;
-    left: 6%;
-    text-align: left;
-    border-bottom: solid black 5px;
-    width: 88%;
-    } */
+.main {
+  margin-top: 300px; /* Add a top margin to avoid content overlay */
+}
 
 /*Weapon Navbar CSS*/
 

@@ -9,10 +9,21 @@
 }
 
 /*Navbar CSS*/
-.navbar {
-  background-color: white;
+
+.index {
   overflow: hidden;
-  border-bottom: solid black 5px;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #ece8e1;
+}
+
+.navbar {
+  background-color: black;
+  overflow: hidden;
   padding-bottom: 0px;
   height: 90px;
 }
@@ -20,23 +31,44 @@
 .navbar a {
   display: flex;
   float: left;
-  color: black;
+  color: white;
   padding: 22px 26px;
   font-size: 40px;
 }
 .navbar .active {
+  background-color: #242424;
+  color: #ff4655;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu:hover {
   background-color: black;
-  color: white;
+  color: #ff4655;
 }
 
 /*Header Text*/
-.header {
-  background-color: white;
+.headertext {
   font-size: 100px;
-  position: relative;
-  left: 8%;
-  top: 18%;
 }
+
+.header {
+  position: relative;
+  text-align: left;
+  top: 20%;
+  padding: 5% 5% 5%;
+}
+
+/* .header {
+    top: 8%;
+    left: 6%;
+    text-align: left;
+    border-bottom: solid black 5px;
+    width: 88%;
+    } */
 
 /*Weapon Navbar CSS*/
 

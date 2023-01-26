@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "ValoFont";
+  src: url(FOnts/Valorant\ Font.ttf);
+}
+
+@font-face {
+  font-family: "TungstenBold";
+  src: url(FOnts/FontsFree-Net-Tungsten-Bold.ttf);
+}
+
+.index {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .navbar {
   background-color: white;
   overflow: hidden;
@@ -12,7 +32,6 @@
   color: black;
   padding: 22px 26px;
   font-size: 40px;
-  /* font-family: "TrebuchetMS", sans-serif; */
 }
 
 .navbar .active {

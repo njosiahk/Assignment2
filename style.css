@@ -1,109 +1,103 @@
 @font-face {
-  font-family: "ValoFont";
-  src: url(FOnts/Valorant\ Font.ttf);
-}
-
-@font-face {
-  font-family: "TungstenBold";
-  src: url(FOnts/FontsFree-Net-Tungsten-Bold.ttf);
-}
-
-.index {
-  overflow: hidden;
-}
-
-body {
-  margin: 0;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-.navbar {
-  background-color: white;
-  overflow: hidden;
-  border-bottom: solid black 5px;
-  padding-bottom: 0px;
-  height: 90px;
-}
-
-.navbar a {
-  display: flex;
-  float: left;
-  color: black;
-  padding: 22px 26px;
-  font-size: 40px;
-}
-
-.navbar .active {
-  background-color: black;
-  color: white;
-}
-
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
-
-.section {
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  padding: 40px;
-  /* width: 60%;
-    margin: 10rem auto 0 auto; */
-}
-.section img {
-  height: 250px;
-}
-.section h1 {
-  margin: 0;
-  color: greenyellow;
-}
-.section p {
-  color: #c0bdbd;
-  margin-right: 15px;
-}
-
-.imgLeft {
-  height: 250px;
-  float: left;
-  padding: 40px;
-}
-
-.media {
-  position: absolute;
-  top: 375%;
-  left: 50%;
-  transform: translate(-53%, -50%);
-}
-
-i {
-  list-style: none;
-  margin: 10px 30px;
-  display: infinite-block;
-  font-size: 20px;
-  padding: 20px 20px;
-  color: black;
-  border: 1px solid black;
-  border-radius: 50%;
-  transition: 0.5s;
-}
-
-i:hover {
-  color: red;
-  border: 1px solid red;
-  transition: 0.5s;
-}
-
-/*Font CSS*/
-.valotext {
-  color: black;
-  font-family: "ValoFont";
-}
-.text {
-  color: black;
-  font-family: "TungstenBold", sans-serif;
-}
-a {
-  text-decoration: none;
-}
+    font-family: "ValoFont";
+    src: url(FOnts/Valorant\ Font.ttf);
+  }
+  
+  @font-face {
+    font-family: "TungstenBold";
+    src: url(FOnts/FontsFree-Net-Tungsten-Bold.ttf);
+  }
+  
+  /*Navbar CSS*/
+  
+  .index {
+    overflow: hidden;
+  }
+  
+  body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #ece8e1;
+  }
+  
+  .navbar {
+    background-color: black;
+    overflow: hidden;
+    padding-bottom: 0px;
+    height: 90px;
+  }
+  
+  .navbar a {
+    display: flex;
+    float: left;
+    color: white;
+    padding: 22px 26px;
+    font-size: 40px;
+  }
+  .navbar .active {
+    background-color: #242424;
+    color: #ff4655;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menu:hover {
+    background-color: black;
+    color: #ff4655;
+  }
+  
+  /*Header Text*/
+  .headertext {
+    font-size: 100px;
+  }
+  
+  .header {
+    position: relative;
+    text-align: left;
+    top: 20%;
+    padding: 5% 5% 5%;
+  }
+  
+  /* .header {
+      top: 8%;
+      left: 6%;
+      text-align: left;
+      border-bottom: solid black 5px;
+      width: 88%;
+      } */
+  
+  /*Weapon Navbar CSS*/
+  
+  /*Weapon Flexbox CSS*/
+  .weapon-flex {
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    left: 10%;
+    right: 10%;
+  }
+  
+  .card {
+    width: 50%;
+    height: auto;
+  }
+  /*Font CSS*/
+  .valotext {
+    color: black;
+    font-family: "ValoFont";
+  }
+  .text {
+    color: black;
+    font-family: "TungstenBold", sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  

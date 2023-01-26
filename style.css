@@ -1,78 +1,90 @@
 .navbar {
-    background-color: white;
-    overflow: hidden;
-    border-bottom: solid black 5px;
-    padding-bottom: 0px;
-    height: 90px;
-  }
-  
-  .navbar a {
-    display: flex;
-    float: left;
-    color: black;
-    padding: 22px 26px;
-    font-size: 40px;
-    /* font-family: "TrebuchetMS", sans-serif; */
-  }
-
-  .navbar .active {
-    background-color: black;
-    color: white;
-  }
-
-  body{
-    margin:0;
-    font-family:sans-serif
+  background-color: white;
+  overflow: hidden;
+  border-bottom: solid black 5px;
+  padding-bottom: 0px;
+  height: 90px;
 }
 
-.section{
-    background-color: black;
-    display: flex;
-    justify-content:space-between;
-    padding: 40px;
-    /* width: 60%;
+.navbar a {
+  display: flex;
+  float: left;
+  color: black;
+  padding: 22px 26px;
+  font-size: 40px;
+  /* font-family: "TrebuchetMS", sans-serif; */
+}
+
+.navbar .active {
+  background-color: black;
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.section {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  /* width: 60%;
     margin: 10rem auto 0 auto; */
 }
-.section img{
-    height:250px;
+.section img {
+  height: 250px;
 }
-.section h1{
-    margin: 0;
-    color: greenyellow;
+.section h1 {
+  margin: 0;
+  color: greenyellow;
 }
-.section p{
-    color:#c0bdbd;
-    margin-right: 15px; 
+.section p {
+  color: #c0bdbd;
+  margin-right: 15px;
 }
 
- .imgLeft{
-    height: 250px; 
-    float:left;
-    padding: 40px;
-    
-} 
+.imgLeft {
+  height: 250px;
+  float: left;
+  padding: 40px;
+}
 
-.media{
-    position: absolute;
-    top: 375%;
-    left:50%;
-    transform:translate(-53%, -50%); 
-  }
-  
-  i{
-    list-style: none;
-    margin: 10px 30px; 
-    display: infinite-block; 
-    font-size:20px;
-    padding: 20px 20px;
-    color:black;
-    border: 1px solid black;
-    border-radius: 50%;
-    transition:0.5s;
-  }
-  
-  i:hover{
-    color:red;
-    border:1px solid red;
-    transition: 0.5s;
-  }
+.media {
+  position: absolute;
+  top: 375%;
+  left: 50%;
+  transform: translate(-53%, -50%);
+}
+
+i {
+  list-style: none;
+  margin: 10px 30px;
+  display: infinite-block;
+  font-size: 20px;
+  padding: 20px 20px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+i:hover {
+  color: red;
+  border: 1px solid red;
+  transition: 0.5s;
+}
+
+/*Font CSS*/
+.valotext {
+  color: black;
+  font-family: "ValoFont";
+}
+.text {
+  color: black;
+  font-family: "TungstenBold", sans-serif;
+}
+a {
+  text-decoration: none;
+}

@@ -1,11 +1,16 @@
 @font-face {
   font-family: "ValoFont";
-  src: url(FOnts/Valorant\ Font.ttf);
+  src: url(Fonts/Valorant\ Font.ttf);
 }
 
 @font-face {
   font-family: "TungstenBold";
-  src: url(FOnts/FontsFree-Net-Tungsten-Bold.ttf);
+  src: url(Fonts/FontsFree-Net-Tungsten-Bold.ttf);
+}
+
+@font-face {
+  font-family: "DINNextW1G";
+  src: url(Fonts/DINNextW1G-Bold.ttf);
 }
 
 /*Navbar CSS*/
@@ -87,8 +92,6 @@ nav {
   position: relative;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
   left: 10%;
   right: 10%;
 }
@@ -97,7 +100,7 @@ nav {
   width: 40%;
   height: auto;
   position: relative;
-  padding: 5%;
+  padding: 10% 5%;
   /* border-style: solid;
   border-color: #a8a5a0; */
 }
@@ -117,10 +120,13 @@ nav {
 
 .weaponflavortext {
   position: absolute;
-  bottom: 20px;
-  left: 50px;
+  bottom: 6%;
+  left: 6%;
   font-size: 30px;
   color: #8a91a1 !important;
+  font-family: "DINNextW1G", sans-serif !important;
+  font-size: lighter;
+  width: 60%;
 }
 
 .weaponoverlay {
@@ -133,7 +139,7 @@ nav {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #ff4655;
+  background-color: rgba(255, 70, 85, 1);
 }
 
 .card:hover .weaponoverlay {
@@ -145,23 +151,33 @@ nav {
   z-index: 1;
 }
 
+.weaponimg {
+  filter: drop-shadow(20px 22px 0 rgba(15, 25, 35, 0.17));
+}
+
 .cardtext {
   color: white !important;
   font-size: 35px;
   position: relative;
-  top: 25%;
-  left: 5%;
+  top: 18%;
+  left: 6%;
   text-align: left;
+  line-height: 0.8;
 }
 
 .carddesc {
   color: white !important;
-  font-size: 35px;
+  font-size: 40px;
   position: relative;
-  top: 40%;
-  left: 10%;
-  width: 75%;
+  top: 30%;
+  left: 12%;
+  right: 12%;
+  width: 74%;
+  font-family: "DINNextW1G", sans-serif !important;
+  font-size: lighter;
+  line-height: 0.95;
 }
+
 /*Font CSS*/
 .valotext {
   color: black;
@@ -173,4 +189,9 @@ nav {
 }
 a {
   text-decoration: none;
+}
+
+/*placeholder CSS*/
+.placeholder {
+  padding-top: 15%;
 }

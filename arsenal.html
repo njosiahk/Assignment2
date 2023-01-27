@@ -10,34 +10,44 @@
       type="text/css"
     />
     <link href="arsenal.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="Javascript/respnav.js" defer></script> -->
     <title>VALORANT WIKI: ARSENAL</title>
   </head>
   <body>
     <div class="backline">
-      <header class="navbar">
+      <header class="navbar" id="myNavbar">
         <nav>
           <div id="nav1">
             <a class="menu valotext" href="index.html">vALORaNT</a>
-
             <a class="menu text" href="agents.html">AGENTS</a>
             <a class="menu active text" href="arsenal.html">ARSENAL</a>
             <a class="menu text" href="news.html">NEWS</a>
-            <!-- <div class="menu dropdown">
-              <button class="menu text dropbtn">NEWS</button>
+            <!-- <div class="dropdown">
+              <button class="dropbtn text">
+                NEWS
+                <i class="fa fa-caret-down"></i>
+              </button>
               <div class="dropdown-content">
-                <a href="updates.html">UPDATES</a>
-                <a href="esports.html">E-SPORTS</a>
+                <a class="text" href="updates.html">UPDATES</a>
+                <a class="text" href="esports.html">E-SPORTS</a>
               </div>
             </div> -->
             <a class="menu text" href="quiz.html">QUIZ</a>
           </div>
           <div id="nav2">
             <a class="menu text" href="">LOGIN</a>
+            <a href="javascript:void(0);" class="icon" onclick="Dropdown()"
+              >&#9776;</a
+            >
           </div>
         </nav>
       </header>
-      <div class="backbox">
-        <img src="HomePage/sitebackground.png" alt="background" class="backimg"
+      <div>
+        <img
+          src="HomePage/sitebackground.png"
+          alt="background"
+          class="backimg"
+        />
         <div>
           <div class="header">
             <div class="text headertext" style="font-size: 170px">

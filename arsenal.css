@@ -22,7 +22,7 @@ body {
 }
 
 .backimg {
-  opacity: 30%;
+  opacity: 10%;
   position: fixed;
   width: 100%;
   background-repeat: no-repeat;
@@ -58,103 +58,10 @@ nav {
   justify-content: space-between;
 }
 
-/* .navbar .icon {
-  display: none;
-} */
-
 .menu:hover {
   background-color: black;
   color: #ff4655;
 }
-
-/* .dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 40px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 22px 26px;
-  background-color: inherit;
-  margin: 0;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 22px 26px;
-  font-size: 40px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a dark background on topnav links and the dropdown button on hover */
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-  background-color: black;
-  color: #ff4655;
-}
-
-/* Add a grey background to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: black;
-  color: #ff4655;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-@media screen and (max-width: 600px) {
-  .navbar a:not(:first-child),
-  .dropdown .dropbtn {
-    display: none;
-  }
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .navbar.responsive {
-    position: relative;
-  }
-  .navbar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .navbar.responsive .dropdown {
-    float: none;
-  }
-  .navbar.responsive .dropdown-content {
-    position: relative;
-  }
-  .navbar.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
-*/
 
 /*Header Text*/
 .headertext {
@@ -187,11 +94,74 @@ nav {
 }
 
 .card {
-  width: 50%;
+  width: 40%;
+  height: auto;
+  position: relative;
+  padding: 5%;
+  /* border-style: solid;
+  border-color: #a8a5a0; */
+}
+
+.weaponimg {
+  display: block;
+  width: 100%;
   height: auto;
 }
 
+.weaponname {
+  position: absolute;
+  top: 25px;
+  left: 45px;
+  font-size: 70px;
+}
 
+.weaponflavortext {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  font-size: 30px;
+  color: #8a91a1 !important;
+}
+
+.weaponoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #ff4655;
+}
+
+.card:hover .weaponoverlay {
+  opacity: 1;
+}
+
+.card:hover .weaponname {
+  color: white;
+  z-index: 1;
+}
+
+.cardtext {
+  color: white !important;
+  font-size: 35px;
+  position: relative;
+  top: 25%;
+  left: 5%;
+  text-align: left;
+}
+
+.carddesc {
+  color: white !important;
+  font-size: 35px;
+  position: relative;
+  top: 40%;
+  left: 10%;
+  width: 75%;
+}
 /*Font CSS*/
 .valotext {
   color: black;

@@ -1,11 +1,16 @@
 @font-face {
   font-family: "ValoFont";
-  src: url(FOnts/Valorant\ Font.ttf);
+  src: url(Fonts/Valorant\ Font.ttf);
 }
 
 @font-face {
   font-family: "TungstenBold";
-  src: url(FOnts/FontsFree-Net-Tungsten-Bold.ttf);
+  src: url(Fonts/FontsFree-Net-Tungsten-Bold.ttf);
+}
+
+@font-face {
+  font-family: "DINNextW1G";
+  src: url(Fonts/DINNextW1G-Bold.ttf);
 }
 
 /*Navbar CSS*/
@@ -22,7 +27,7 @@ body {
 }
 
 .backimg {
-  opacity: 30%;
+  opacity: 10%;
   position: fixed;
   width: 100%;
   background-repeat: no-repeat;
@@ -58,103 +63,10 @@ nav {
   justify-content: space-between;
 }
 
-/* .navbar .icon {
-  display: none;
-} */
-
 .menu:hover {
   background-color: black;
   color: #ff4655;
 }
-
-/* .dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 40px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 22px 26px;
-  background-color: inherit;
-  margin: 0;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 22px 26px;
-  font-size: 40px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a dark background on topnav links and the dropdown button on hover */
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-  background-color: black;
-  color: #ff4655;
-}
-
-/* Add a grey background to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: black;
-  color: #ff4655;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-@media screen and (max-width: 600px) {
-  .navbar a:not(:first-child),
-  .dropdown .dropbtn {
-    display: none;
-  }
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .navbar.responsive {
-    position: relative;
-  }
-  .navbar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .navbar.responsive .dropdown {
-    float: none;
-  }
-  .navbar.responsive .dropdown-content {
-    position: relative;
-  }
-  .navbar.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
-*/
 
 /*Header Text*/
 .headertext {
@@ -180,17 +92,91 @@ nav {
   position: relative;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
   left: 10%;
   right: 10%;
 }
 
 .card {
-  width: 50%;
+  width: 40%;
+  height: auto;
+  position: relative;
+  padding: 10% 5%;
+  /* border-style: solid;
+  border-color: #a8a5a0; */
+}
+
+.weaponimg {
+  display: block;
+  width: 100%;
   height: auto;
 }
 
+.weaponname {
+  position: absolute;
+  top: 25px;
+  left: 45px;
+  font-size: 70px;
+}
+
+.weaponflavortext {
+  position: absolute;
+  bottom: 6%;
+  left: 6%;
+  font-size: 30px;
+  color: #8a91a1 !important;
+  font-family: "DINNextW1G", sans-serif !important;
+  font-size: lighter;
+  width: 60%;
+}
+
+.weaponoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(255, 70, 85, 1);
+}
+
+.card:hover .weaponoverlay {
+  opacity: 1;
+}
+
+.card:hover .weaponname {
+  color: white;
+  z-index: 1;
+}
+
+.weaponimg {
+  filter: drop-shadow(20px 22px 0 rgba(15, 25, 35, 0.17));
+}
+
+.cardtext {
+  color: white !important;
+  font-size: 35px;
+  position: relative;
+  top: 18%;
+  left: 6%;
+  text-align: left;
+  line-height: 0.8;
+}
+
+.carddesc {
+  color: white !important;
+  font-size: 40px;
+  position: relative;
+  top: 30%;
+  left: 12%;
+  right: 12%;
+  width: 74%;
+  font-family: "DINNextW1G", sans-serif !important;
+  font-size: lighter;
+  line-height: 0.95;
+}
 
 /*Font CSS*/
 .valotext {
@@ -203,4 +189,9 @@ nav {
 }
 a {
   text-decoration: none;
+}
+
+/*placeholder CSS*/
+.placeholder {
+  padding-top: 15%;
 }

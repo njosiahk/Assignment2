@@ -9,39 +9,53 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link href="arsenal.css" rel="stylesheet" type="text/css" />
-    <!-- <script src="Javascript/respnav.js" defer></script> -->
+    <script src="Javascript/navbar.js" defer></script>
     <title>VALORANT WIKI: ARSENAL</title>
   </head>
   <body>
     <div class="backline">
-      <header class="navbar" id="myNavbar">
-        <nav>
-          <div id="nav1">
-            <a class="menu valotext" href="index.html">vALORaNT</a>
+        <nav class="navbar" id="myNavbar">
+          <div>
+            <a class="menu valotext" href="index.html" style="padding-top: 27px"
+              >vALORaNT</a
+            >
             <a class="menu text" href="agents.html">AGENTS</a>
-            <a class="menu active text" href="arsenal.html">ARSENAL</a>
-            <a class="menu text" href="news.html">NEWS</a>
-            <!-- <div class="dropdown">
+            <a class="menu active highlight text" href="arsenal.html">ARSENAL</a>
+            <div class="dropdown">
               <button class="dropbtn text">
                 NEWS
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdown-content">
-                <a class="text" href="updates.html">UPDATES</a>
-                <a class="text" href="esports.html">E-SPORTS</a>
+                <a class="menu text" href="updates.html">UPDATES</a>
+                <a class="menu text" href="esports.html">E-SPORTS</a>
               </div>
-            </div> -->
-            <a class="menu text" href="quiz.html">QUIZ</a>
-          </div>
-          <div id="nav2">
-            <a class="menu text" href="">LOGIN</a>
-            <!-- <a href="javascript:void(0);" class="icon" onclick="Dropdown()"
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn text">
+                GAME
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a class="menu text" href="game.html">BLAST-EM</a>
+                <a class="menu text" href="quiz.html">GUESS</a>
+              </div>
+            </div>
+            <a href="#about" class="text" style="float: right">LOGIN</a>
+            <a
+              href="javascript:void(0);"
+              style="font-size: 15px"
+              class="icon"
+              onclick="NavSwap()"
               >&#9776;</a
-            > -->
+            >
           </div>
         </nav>
-      </header>
       <div>
         <img
           src="HomePage/sitebackground.png"
@@ -322,7 +336,7 @@
               />
               <div class="weaponname text">OPERATOR.</div>
               <div class="weaponflavortext text">
-                Hit-or-miss, and life-or-death.<br>So aim true and make no blunder.
+                Hit-or-miss, and life-or-death.<br>Aim true and make no blunder.
               </div>
               <div class="weaponoverlay">
                 <div class="cardtext text">TYPE // SNIPER RIFLE<br>FIRE MODE // BOLT-ACTION</div>
@@ -340,7 +354,7 @@
               />
               <div class="weaponname text">ARES.</div>
               <div class="weaponflavortext text">
-                The torrent of lead only gets more accurate the longer it fires.
+                It&#39s torrent of lead only gets more accurate the longer it fires.
               </div>
               <div class="weaponoverlay">
                 <div class="cardtext text">TYPE // HEAVY MACHINE GUN<br>FIRE MODE // FULL-AUTO</div>
@@ -363,7 +377,7 @@
               <div class="weaponoverlay">
                 <div class="cardtext text">TYPE // HEAVY MACHINE GUN<br>FIRE MODE // FULL(ER)-AUTO</div>
                 <div class="carddesc text">
-                  The perfect tool for a living turret or supportive fire. The Odin makes up for it&#39s high cost by bringing utter ruin to all who stand in it&#39s way.
+                  The perfect tool for a living turret or supportive fire. The Odin makes up for it&#39s high cost by bringing utter ruin to all who dare stand in it&#39s way.
                 </div>
               </div>
             </div>
@@ -376,7 +390,7 @@
               />
               <div class="weaponname text">TACTICAL KNIFE.</div>
               <div class="weaponflavortext text">
-                The last resort, or the declaration of superiority. Victim humiliation is guaranteed nonetheless.
+                The last resort, or the declaration of superiority. Victim humiliation guaranteed nonetheless.
               </div>
               <div class="weaponoverlay">
                 <div class="cardtext text">TYPE // MELEE<br>FIRE MODE // SLASH / STAB</div>

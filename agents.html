@@ -4,7 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="Normalize.css/node_modules/normalize.css/normalize.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="agents.css  " rel="stylesheet" type="text/css" />
+    <script src="Javascript/navbar.js" defer></script>
+    <title>VALORANT WIKI: AGENTS</title>
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar" id="myNavbar">
+      <div>
+        <a class="menu valotext" href="index.html" style="padding-top: 27px"
+          >vALORaNT</a
+        >
+        <a class="menu active highlight text" href="agents.html">AGENTS</a>
+        <a class="menu text" href="arsenal.html">ARSENAL</a>
+        <div class="dropdown">
+          <button class="dropbtn text">
+            NEWS
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a class="menu text" href="updates.html">UPDATES</a>
+            <a class="menu text" href="esports.html">E-SPORTS</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn text">
+            GAME
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a class="menu text" href="game.html">BLAST-EM</a>
+            <a class="menu text" href="quiz.html">GUESS</a>
+          </div>
+        </div>
+        <a href="#about" class="text" style="float: right">LOGIN</a>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="NavSwap()"
+          >&#9776;</a
+        >
+      </div>
+    </nav>
+    <nav>
+      <img src="HomePage/sitebackground.png" alt="background" class="backimg" />
+    </nav>
+  </body>
 </html>

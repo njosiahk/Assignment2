@@ -1,11 +1,11 @@
 @font-face {
   font-family: "ValoFont";
-  src: url(Fonts/Valorant\ Font.ttf);
+  src: url(FOnts/Valorant\ Font.ttf);
 }
 
 @font-face {
   font-family: "TungstenBold";
-  src: url(Fonts/FontsFree-Net-Tungsten-Bold.ttf);
+  src: url(FOnts/FontsFree-Net-Tungsten-Bold.ttf);
 }
 
 .index {
@@ -30,16 +30,6 @@ body {
   z-index: -1;
 }
 
-/* .navbar {
-  overflow: hidden;
-  background-color: #333;
-} */
-
-/* nav {
-  display: flex;
-  justify-content: space-between;
-} */
-
 .navbar {
   background-color: black;
   overflow: hidden;
@@ -50,16 +40,6 @@ body {
   width: 100%;
   z-index: 3;
 }
-
-/* .navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-} */
 
 .navbar a {
   display: flex;

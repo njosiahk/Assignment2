@@ -3,7 +3,7 @@
     src: url(FOnts/Valorant\ Font.ttf);
   }
   
-  @font-face {
+@font-face {
     font-family: "TungstenBold";
     src: url(FOnts/FontsFree-Net-Tungsten-Bold.ttf);
   }
@@ -80,11 +80,12 @@
     font-family: "ValoFont";
   }
   .text {
-    color: white;
+    color: black;
     font-family: "TungstenBold", sans-serif;
   }
   a {
     text-decoration: none;
+    color: white;
   }
 
   .sec1{
@@ -102,7 +103,7 @@ h2{
 }
 
 span{
-  color: white;
+  color: black;
 }
 
 #promo{
@@ -231,4 +232,117 @@ span{
 
 #footer .text{
   font-size: 1.3rem;
+}
+
+.flex ul li{
+  display: inline-block;
+  margin: 10px;
+}
+
+.flex ul li i{
+  font-size: 1.6rem;
+}
+
+.flex ul li i:hover{
+  color: #f1f1f1;
+}
+
+.text1 {
+  color: white;
+  font-family: "TungstenBold", sans-serif;
+}
+
+.title{
+  background-color: red;
+  padding: 1rem 0;
+  color: white;
+}
+
+.title h2{
+  margin: 2rem 0;
+}
+
+article{
+  margin: 2rem 0;
+}
+
+.item-img{
+  position: relative;
+  height: 380px;
+  overflow: hidden;
+}
+
+.item-img img{
+  object-fit: cover;
+  height: 100%;
+}
+
+.item-img span{
+  position: absolute;
+  bottom:0;
+  right:0;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background-color: red;
+  color:white;
+}
+
+.item-text{
+  padding: 2rem 0;
+}
+
+.h1{
+  font-size: 2.2rem;
+  color: black;
+  display: block;
+  margin-bottom: 1.6rem;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+.item-text a{
+  transition: var(--trans);
+}
+
+.item-text a:hover{
+  opacity: 0.8;
+}
+
+.category{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6rem;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.4rem 0.8rem;
+  background-color: red;
+  margin-right: 1 rem;
+  margin-bottom: 1rem;
+  border-radius: .2rem;
+}
+
+.item-text .date{
+  opacity: 0.5;
+  margin-top: 1.5rem;
+  letter-spacing: 1px;
+}
+
+@media(min-width:768px){
+  #reviews article{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 2rem;
+  }
+
+  #reviews article .item-img{
+    height: 260px;
+  }
+  
+}
+
+@media(min-width: 1200px){
+  #reviews .container{
+    display:grid;
+    grid-template-columns: auto 400px;
+    column-gap: 4rem;
+  }
 }

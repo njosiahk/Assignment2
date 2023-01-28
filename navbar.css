@@ -1,23 +1,46 @@
 @font-face {
-    font-family: "ValoFont";
-    src: url(FOnts/Valorant\ Font.ttf);
-  }
-  
-  @font-face {
-    font-family: "TungstenBold";
-    src: url(FOnts/FontsFree-Net-Tungsten-Bold.ttf);
-  }
-
-
-
-body {margin:0;font-family:Arial}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
+  font-family: "ValoFont";
+  src: url(FOnts/Valorant\ Font.ttf);
 }
 
-.topnav a {
+@font-face {
+  font-family: "TungstenBold";
+  src: url(FOnts/FontsFree-Net-Tungsten-Bold.ttf);
+}
+
+.index {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #ece8e1;
+}
+
+/* .navbar {
+  overflow: hidden;
+  background-color: #333;
+} */
+
+/* nav {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.navbar {
+  background-color: black;
+  overflow: hidden;
+  padding-bottom: 0px;
+  height: 90px;
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+/* .navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -25,14 +48,25 @@ body {margin:0;font-family:Arial}
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+} */
+
+.navbar a {
+  display: flex;
+  float: left;
+  color: white;
+  padding: 21px 26px;
+  font-size: 40px;
 }
 
 .active {
-  background-color: black;
-  color: white;
+  color: #ff4655 !important;
 }
 
-.topnav .icon {
+.highlight {
+  background-color: #242424 !important;
+}
+
+.navbar .icon {
   display: none;
 }
 
@@ -42,42 +76,42 @@ body {margin:0;font-family:Arial}
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;    
+  font-size: 40px;
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 21px 26px;
   background-color: inherit;
-  font-family: inherit;
   margin: 0;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: #292929;
+  min-width: 146px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
   float: none;
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: center;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: black;
+  color: #ff4655;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: rgb(22, 22, 22);
+  color: #ff4655;
 }
 
 .dropdown:hover .dropdown-content {
@@ -85,30 +119,37 @@ body {margin:0;font-family:Arial}
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+  .navbar a:not(:first-child),
+  .dropdown .dropbtn {
     display: none;
   }
-  .topnav a.icon {
+  .navbar a.icon {
     float: right;
     display: block;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+  .navbar.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
+  .navbar.responsive .dropdown {
+    float: none;
+  }
+  .navbar.responsive .dropdown-content {
+    position: relative;
+  }
+  .navbar.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
     text-align: left;
@@ -117,13 +158,13 @@ body {margin:0;font-family:Arial}
 
 /*Font CSS*/
 .valotext {
-    color: black;
-    font-family: "ValoFont";
-  }
-  .text {
-    color: black;
-    font-family: "TungstenBold", sans-serif;
-  }
-  a {
-    text-decoration: none;
-  }
+  color: black;
+  font-family: "ValoFont";
+}
+.text {
+  color: black;
+  font-family: "TungstenBold", sans-serif;
+}
+a {
+  text-decoration: none;
+}

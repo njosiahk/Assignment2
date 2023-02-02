@@ -13,50 +13,628 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link href="agents.css  " rel="stylesheet" type="text/css" />
+    <link href="agents.css" rel="stylesheet" type="text/css" />
     <script src="Javascript/navbar.js" defer></script>
     <title>VALORANT WIKI: AGENTS</title>
   </head>
   <body>
-    <nav class="navbar" id="myNavbar">
+    <div class="backline">
+      <nav class="navbar" id="myNavbar">
+        <div>
+          <a class="menu valotext" href="index.html" style="padding-top: 27px"
+            >vALORaNT</a
+          >
+          <a class="menu active highlight text" href="agents.html">AGENTS</a>
+          <a class="menu text" href="arsenal.html">ARSENAL</a>
+          <div class="dropdown">
+            <button class="dropbtn text">
+              NEWS
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a class="menu text" href="updates.html">UPDATES</a>
+              <a class="menu text" href="esports.html">E-SPORTS</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn text">
+              GAME
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a class="menu text" href="game.html">BLAST-EM</a>
+              <a class="menu text" href="quiz.html">GUESS</a>
+            </div>
+          </div>
+          <a href="#about" class="text" style="float: right">LOGIN</a>
+          <a
+            href="javascript:void(0);"
+            style="font-size: 15px"
+            class="icon"
+            onclick="NavSwap()"
+            >&#9776;</a
+          >
+        </div>
+      </nav>
       <div>
-        <a class="menu valotext" href="index.html" style="padding-top: 27px"
-          >vALORaNT</a
-        >
-        <a class="menu active highlight text" href="agents.html">AGENTS</a>
-        <a class="menu text" href="arsenal.html">ARSENAL</a>
-        <div class="dropdown">
-          <button class="dropbtn text">
-            NEWS
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a class="menu text" href="updates.html">UPDATES</a>
-            <a class="menu text" href="esports.html">E-SPORTS</a>
+        <img
+          src="HomePage/sitebackground.png"
+          alt="background"
+          class="backimg"
+        />
+        <div>
+          <div class="header">
+            <div class="text headertext" style="font-size: 170px">
+              CHOOSE YOUR<br />AGENT
+            </div>
           </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn text">
-            GAME
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a class="menu text" href="game.html">BLAST-EM</a>
-            <a class="menu text" href="quiz.html">GUESS</a>
+          <div class="agent-flex">
+            <div class="card controller">
+              <img
+                src="Agent_Images/V_AGENTS_587x900_Brimstone.png"
+                alt="Brimstone"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/brimstone/"
+                ><img class="class" src="Agent_Classes/Controller.png"
+              /></a>
+              <div class="agentname text">BRIMSTONE.</div>
+              <div class="agentnum text">// 01</div>
+              <div class="agentflavortext text">
+                "They think I'm an old dog? Heh.<br />I'll show 'em just how
+                many tricks I know."
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // CONTROLLER</div>
+                <div class="carddesc text">
+                  Joining from the USA, Brimstone's orbital arsenal ensures his
+                  squad always has the advantage. His ability to deliver utility
+                  precisely and from a distance makes him an unmatched
+                  boots-on-the-ground commander.
+                </div>
+              </div>
+            </div>
+
+            <div class="card duelist">
+              <img
+                src="Agent_Images/V_AGENTS_587x900_Phx.png"
+                alt="Phoenix"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/phoenix/"
+                ><img class="class" src="Agent_Classes/Duelist.png"
+              /></a>
+              <div class="agentname text">PHOENIX.</div>
+              <div class="agentnum text">// 02</div>
+              <div class="agentflavortext text">
+                "Just take a seat, I got this."
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // DUELIST</div>
+                <div class="carddesc text">
+                  Hailing from the U.K., Phoenix's star power shines through in
+                  his fighting style, igniting the battlefield with flash and
+                  flare. Whether he's got backup or not, he'll rush into a fight
+                  on his own terms.
+                </div>
+              </div>
+            </div>
+
+            <div class="card duelist">
+              <img
+                src="Agent_Images/V_AGENTS_587x900_sage.png"
+                alt="Sage"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/sage/"
+                ><img class="class" src="Agent_Classes/Sentinel.png"
+              /></a>
+              <div class="agentname text">SAGE.</div>
+              <div class="agentnum text">// 03</div>
+              <div class="agentflavortext text">
+                "Look at me, and know that I am by your side."
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // SENTINEL</div>
+                <div class="carddesc text">
+                  The stronghold of China, Sage creates safety for herself and
+                  her team wherever she goes. Able to revive fallen friends and
+                  stave off aggressive pushes, she provides a calm center to a
+                  hellish fight.
+                </div>
+              </div>
+            </div>
+
+            <div class="card initiator">
+              <img
+                src="Agent_Images/V_AGENTS_587x900_ALL_Sova_2.png"
+                alt="Sova"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/sova/"
+                ><img class="class" src="Agent_Classes/Initiator.png"
+              /></a>
+              <div class="agentname text">SOVA.</div>
+              <div class="agentnum text">// 04</div>
+              <div class="agentflavortext text">"Come, into the unknown!"</div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // INITIATOR</div>
+                <div class="carddesc text">
+                  Born from the eternal winter of Russia's tundra, Sova tracks,
+                  finds, and eliminates enemies with ruthless efficiency and
+                  precision. His custom bow and incredible scouting abilities
+                  ensure that even if you run, you cannot hide.
+                </div>
+              </div>
+            </div>
+
+            <div class="card controller">
+              <img
+                src="Agent_Images/V_AGENTS_587x900_Viper.png"
+                alt="Viper"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/viper/"
+                ><img class="class" src="Agent_Classes/Controller.png"
+              /></a>
+              <div class="agentname text">VIPER.</div>
+              <div class="agentnum text">// 05</div>
+              <div class="agentflavortext text">
+                "No one can hold their breath forever."
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // CONTROLLER</div>
+                <div class="carddesc text">
+                  The American chemist, Viper deploys an array of poisonous
+                  chemical devices to control the battlefield and cripple the
+                  enemy's vision. If the toxins don't kill her prey, her mind
+                  games surely will.
+                </div>
+              </div>
+            </div>
+
+            <div class="card sentinel">
+              <img
+                src="Agent_Images/V_AGENTS_587x900_Cypher.png"
+                alt="Cypher"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/cypher/"
+                ><img class="class" src="Agent_Classes/Sentinel.png"
+              /></a>
+              <div class="agentname text">CYPHER.</div>
+              <div class="agentnum text">// 06</div>
+              <div class="agentflavortext text">
+                "Where is everyone hiding?"
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // SENTINEL</div>
+                <div class="carddesc text">
+                  The Moroccan information broker, Cypher is a one-man
+                  surveillance network who keeps tabs on the enemy's every move.
+                  No secret is safe. No maneuver goes unseen. Cypher is always
+                  watching.
+                </div>
+              </div>
+            </div>
+
+            <div class="card duelist">
+              <img
+                src="Agent_Images/V_AGENTS_587x900_Reyna.png"
+                alt="Reyna"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/reyna/"
+                ><img class="class" src="Agent_Classes/Duelist.png"
+              /></a>
+              <div class="agentname text">REYNA.</div>
+              <div class="agentnum text">// 07</div>
+              <div class="agentflavortext text">
+                "I'm the last thing they'll see before<br />they die. Lucky
+                them."
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // DUELIST</div>
+                <div class="carddesc text">
+                  Forged in the heart of Mexico, Reyna dominates single combat,
+                  popping off with each kill she scores. Her capability is only
+                  limited by her raw skill, making her highly dependent on
+                  performance.
+                </div>
+              </div>
+            </div>
+
+            <div class="card sentinel">
+              <img
+                src="Agent_Images/V_AGENTS_587x900_KillJoy_.png"
+                alt="Killjoy"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/killjoy/"
+                ><img class="class" src="Agent_Classes/Sentinel.png"
+              /></a>
+              <div class="agentname text">KILLJOY.</div>
+              <div class="agentnum text">// 08</div>
+              <div class="agentflavortext text">
+                "Relax. I've already thought of everything."
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // SENTINEL</div>
+                <div class="carddesc text">
+                  The genius of Germany. Killjoy secures the battlefield with
+                  ease using her arsenal of inventions. If the damage from her
+                  gear doesn't stop her enemies, her robots' debuff will help
+                  make short work of them.
+                </div>
+              </div>
+            </div>
+
+            <div class="card initiator">
+              <img
+                src="Agent_Images/V_AGENTS_587x900_Breach.png"
+                alt="Breach"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/breach/"
+                ><img class="class" src="Agent_Classes/Initiator.png"
+              /></a>
+              <div class="agentname text">BREACH.</div>
+              <div class="agentnum text">// 09</div>
+              <div class="agentflavortext text">
+                "If you're not being shot at you're doing something wrong!"
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // INITIATOR</div>
+                <div class="carddesc text">
+                  Breach, the bionic Swede, fires powerful, targeted kinetic
+                  blasts to aggressively clear a path through enemy ground. The
+                  damage and disruption he inflicts ensures no fight is ever
+                  fair.
+                </div>
+              </div>
+            </div>
+
+            <div class="card controller">
+              <img
+                src="Agent_Images/V_AGENTS_587x900_Omen.png"
+                alt="Omen"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/omen/"
+                ><img class="class" src="Agent_Classes/Controller.png"
+              /></a>
+              <div class="agentname text">OMEN.</div>
+              <div class="agentnum text">// 10</div>
+              <div class="agentflavortext text">
+                "They think they know pain?<br />They can't begin to comprehend
+                it."
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // CONTROLLER</div>
+                <div class="carddesc text">
+                  A phantom of a memory, Omen hunts in the shadows. He renders
+                  enemies blind, teleports across the field, then lets paranoia
+                  take hold as his foe scrambles to learn where he might strike
+                  next.
+                </div>
+              </div>
+            </div>
+
+            <div class="card duelist">
+              <img
+                src="Agent_Images/V_AGENTS_587x900_Jett.png"
+                alt="Jett"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/jett/"
+                ><img class="class" src="Agent_Classes/Duelist.png"
+              /></a>
+              <div class="agentname text">JETT.</div>
+              <div class="agentnum text">// 11</div>
+              <div class="agentflavortext text">
+                "I got your backs.<br />Just...y'know...from the front."
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // DUELIST</div>
+                <div class="carddesc text">
+                  Representing her home country of South Korea, Jett's agile and
+                  evasive fighting style lets her take risks no one else can.
+                  She runs circles around every skirmish, cutting enemies before
+                  they even know what hit them.
+                </div>
+              </div>
+            </div>
+
+            <div class="card duelist">
+              <img
+                src="Agent_Images/V_AGENTS_587x900_ALL_Raze_2.png"
+                alt="Raze"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/raze/"
+                ><img class="class" src="Agent_Classes/Duelist.png"
+              /></a>
+              <div class="agentname text">RAZE.</div>
+              <div class="agentnum text">// 12</div>
+              <div class="agentflavortext text">
+                "They think they know pain?<br />They can't begin to comprehend
+                it."
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // DUELIST</div>
+                <div class="carddesc text">
+                  Raze explodes out of Brazil with her big personality and big
+                  guns. With her blunt-force-trauma playstyle, she excels at
+                  flushing entrenched enemies and clearing tight spaces with a
+                  generous dose of “boom.”
+                </div>
+              </div>
+            </div>
+
+            <div class="card initiator">
+              <img
+                src="Agent_Images/V_AGENTS_587x900_ALL_Skye.png"
+                alt="Skye"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/skye/"
+                ><img class="class" src="Agent_Classes/Initiator.png"
+              /></a>
+              <div class="agentname text">SKYE.</div>
+              <div class="agentnum text">// 13</div>
+              <div class="agentflavortext text">
+                "Find the weak point, and break it."
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // INITIATOR</div>
+                <div class="carddesc text">
+                  Hailing from Australia, Skye and her band of beasts
+                  trail-blaze the way through hostile territory. With her
+                  creations hampering the enemy, and her power to heal others,
+                  the team is strongest and safest by Skye’s side.
+                </div>
+              </div>
+            </div>
+
+            <div class="card duelist">
+              <img
+                src="Agent_Images/V_AGENTS_587x900_yoru.png"
+                alt="Yoru"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/raze/"
+                ><img class="class" src="Agent_Classes/Duelist.png"
+              /></a>
+              <div class="agentname text">YORU.</div>
+              <div class="agentnum text">// 14</div>
+              <div class="agentflavortext text">
+                "I'll fight anybody. I'll fight everybody."
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // DUELIST</div>
+                <div class="carddesc text">
+                  Japanese native, Yoru, rips holes straight through reality to
+                  infiltrate enemy lines unseen. Using deception and aggression
+                  in equal measure, he gets the drop on each target before they
+                  know where to look.
+                </div>
+              </div>
+            </div>
+
+            <div class="card controller">
+              <img
+                src="Agent_Images/V_AGENTS_587x900_Astra.png"
+                alt="Astra"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/astra/"
+                ><img class="class" src="Agent_Classes/Controller.png"
+              /></a>
+              <div class="agentname text">ASTRA.</div>
+              <div class="agentnum text">// 15</div>
+              <div class="agentflavortext text">
+                "Relax, my friends. Time and space are... *chuckles*... they're
+                not what you think."
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // CONTROLLER</div>
+                <div class="carddesc text">
+                  Ghanaian Agent Astra harnesses the energies of the cosmos to
+                  reshape battlefields to her whim. With full command of her
+                  astral form and a talent for deep strategic foresight, she's
+                  always eons ahead of her enemy's next move.
+                </div>
+              </div>
+            </div>
+
+            <div class="card initiator">
+              <img
+                src="Agent_Images/KAYO_KeyArt_587x900.png"
+                alt="KAY/O"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/kay-o/"
+                ><img class="class" src="Agent_Classes/Initiator.png"
+              /></a>
+              <div class="agentname text">KAY/O.</div>
+              <div class="agentnum text">// 16</div>
+              <div class="agentflavortext text">
+                "Activating kill mode. That's a joke. Kill mode is default."
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // INITIATOR</div>
+                <div class="carddesc text">
+                  KAY/O is a machine of war built for a single purpose:
+                  neutralizing radiants. His power to suppress enemy abilities
+                  cripples his opponents' capacity to fight back, securing him
+                  and his allies the ultimate edge.
+                </div>
+              </div>
+            </div>
+
+            <div class="card sentinel">
+              <img
+                src="Agent_Images/WebUpdate_Chamber_KeyArt.png"
+                alt="Chamber"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/chamber/"
+                ><img class="class" src="Agent_Classes/Sentinel.png"
+              /></a>
+              <div class="agentname text">CHAMBER.</div>
+              <div class="agentnum text">// 17</div>
+              <div class="agentflavortext text">
+                "It seems these strangers want me dead. Eh bien, they're not the
+                first."
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // SENTINEL</div>
+                <div class="carddesc text">
+                  Well dressed and well armed, French weapons designer Chamber
+                  expels aggressors with deadly precision. He leverages his
+                  custom arsenal to hold the line and pick off enemies from
+                  afar, with a contingency built for every plan.
+                </div>
+              </div>
+            </div>
+
+            <div class="card duelist">
+              <img
+                src="Agent_Images/Neon_KeyArt-Web.png"
+                alt="Neon"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/neon/"
+                ><img class="class" src="Agent_Classes/Duelist.png"
+              /></a>
+              <div class="agentname text">NEON.</div>
+              <div class="agentnum text">// 18</div>
+              <div class="agentflavortext text">
+                "Any chance they'll let us through?<br />Fine, we'll do it the
+                hard way."
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // INITIATOR</div>
+                <div class="carddesc text">
+                  Filipino Agent Neon surges forward at shocking speeds,
+                  discharging bursts of bioelectric radiance as fast as her body
+                  generates it. She races ahead to catch enemies off guard, then
+                  strikes them down quicker than lightning.
+                </div>
+              </div>
+            </div>
+
+            <div class="card initiator">
+              <img
+                src="Agent_Images/Fade_Key_Art_587x900_for_Website.png"
+                alt="Fade"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/fade/"
+                ><img class="class" src="Agent_Classes/Initiator.png"
+              /></a>
+              <div class="agentname text">FADE.</div>
+              <div class="agentnum text">// 19</div>
+              <div class="agentflavortext text">
+                "Make their fear your weapon...<br />or use a gun, whichever."
+              </div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // INITIATOR</div>
+                <div class="carddesc text">
+                  Turkish bounty hunter, Fade, unleashes the power of raw
+                  nightmares to seize enemy secrets. Attuned with terror itself,
+                  she hunts targets and reveals their deepest fears—before
+                  crushing them in the dark.
+                </div>
+              </div>
+            </div>
+
+            <div class="card controller">
+              <img
+                src="Agent_Images/Harbor_KeyArt-web.png"
+                alt="Harbor"
+                class="agentimg"
+              />
+              <div class="redbar"></div>
+              <div class="whitebar"></div>
+              <div class="blackbar"></div>
+              <a href="https://playvalorant.com/en-us/agents/harbor/"
+                ><img class="class" src="Agent_Classes/Duelist.png"
+              /></a>
+              <div class="agentname text">HARBOR.</div>
+              <div class="agentnum text">// 20</div>
+              <div class="agentflavortext text">"Let's turn the tide!"</div>
+              <div class="agentoverlay">
+                <div class="cardtext text">ROLE // CONTROLLER</div>
+                <div class="carddesc text">
+                  Hailing from India’s coast, Harbor storms the field wielding
+                  ancient technology with dominion over water. He unleashes
+                  frothing rapids and crushing waves to shield his allies and
+                  pummel those that oppose him.
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="placeholder"></div>
         </div>
-        <a href="#about" class="text" style="float: right">LOGIN</a>
-        <a
-          href="javascript:void(0);"
-          style="font-size: 15px"
-          class="icon"
-          onclick="NavSwap()"
-          >&#9776;</a
-        >
       </div>
-    </nav>
-    <nav>
-      <img src="HomePage/sitebackground.png" alt="background" class="backimg" />
-    </nav>
+    </div>
   </body>
 </html>

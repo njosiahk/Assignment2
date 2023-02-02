@@ -284,6 +284,7 @@ body {
 .card:hover .class {
   opacity: 1;
   transition: 3s ease;
+  transition-delay: 0.4s;
 }
 
 .card:not(:hover) .class {

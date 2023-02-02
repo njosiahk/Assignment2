@@ -1,12 +1,19 @@
 @font-face {
   font-family: "ValoFont";
-  src: url(FOnts/Valorant\ Font.ttf);
+  src: url(Fonts/Valorant\ Font.ttf);
 }
 
 @font-face {
   font-family: "TungstenBold";
-  src: url(FOnts/FontsFree-Net-Tungsten-Bold.ttf);
+  src: url(Fonts/FontsFree-Net-Tungsten-Bold.ttf);
 }
+
+@font-face {
+  font-family: "DINNextW1G";
+  src: url(Fonts/DINNextW1G-Bold.ttf);
+}
+
+/*Navbar CSS*/
 
 .index {
   overflow: hidden;
@@ -147,6 +154,229 @@ body {
   }
 }
 
+/*Header Text*/
+.headertext {
+  font-size: 100px;
+  line-height: 0.9;
+}
+
+.header {
+  position: relative;
+  text-align: left;
+  padding: 11% 5%;
+}
+
+.main {
+  margin-top: 300px; /* Add a top margin to avoid content overlay */
+}
+
+/*Agent Navbar CSS*/
+
+/*Agent Flexbox CSS*/
+.agent-flex {
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  left: 10%;
+  right: 10%;
+}
+
+.card {
+  width: 39%;
+  height: 30%;
+  position: relative;
+  padding: 10% 5%;
+  border: 0.75px solid rgba(168, 165, 160, 0.4);
+}
+
+.agentimg {
+  display: block;
+  position: absolute;
+  right: 0;
+  /* top: 0; */
+  bottom: 0;
+  width: 150px;
+  height: 150px;
+  filter: brightness(0%);
+}
+
+.agentname {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  font-size: 60px;
+}
+
+.agentnum {
+  position: absolute;
+  top: 15px;
+  right: 175px;
+  font-size: 60px;
+}
+
+.agentflavortext {
+  position: absolute;
+  bottom: 6%;
+  left: 5%;
+  font-size: 19px;
+  color: #8a91a1 !important;
+  font-family: "DINNextW1G", sans-serif !important;
+  font-size: lighter;
+  width: 60%;
+}
+
+.agentoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 74%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(255, 70, 85, 1);
+}
+
+.whitebar {
+  position: absolute;
+  right: 150px;
+  bottom: 0;
+  width: 7px;
+  background-color: white;
+  height: 243.5px;
+  z-index: 100;
+  opacity: 0;
+}
+
+.redbar {
+  position: absolute;
+  right: 150px;
+  bottom: 0;
+  width: 7px;
+  background-color: rgb(255, 70, 85);
+  height: 243.5px;
+  z-index: 10;
+}
+
+.blackbar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 243.5px;
+  width: 150px;
+  background-color: #0f1823;
+  z-index: -1;
+  opacity: 0;
+}
+
+.class {
+  position: absolute;
+  max-height: 80px;
+  max-width: 80px;
+  opacity: 0;
+  top: 7px;
+  right: 35px;
+  z-index: 1;
+}
+
+.card:hover .class {
+  opacity: 1;
+  transition: 3s ease;
+}
+
+.card:not(:hover) .class {
+  transition: 1s ease;
+}
+
+.card:hover .agentimg {
+  filter: brightness(100%);
+  transition: 1.5s ease;
+}
+
+.card:not(:hover) .agentimg {
+  filter: brightness(0%);
+  transition: 1.5s ease;
+}
+
+.card:hover .blackbar {
+  opacity: 1;
+  transition: 0.75s ease;
+}
+
+.card:not(:hover) .blackbar {
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.card:hover .agentflavortext {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.card:hover .agentoverlay {
+  opacity: 1;
+}
+
+.card:not(:hover) .agentoverlay {
+  transition: 0.8s ease;
+}
+
+.card:hover .agentname {
+  color: white;
+  z-index: 1;
+  transition: 0.5s ease-out;
+}
+
+.card:hover .agentnum {
+  color: white;
+  z-index: 1;
+  transition: 0.5s ease-out;
+}
+
+.card:hover .whitebar {
+  opacity: 1;
+  transition: 0.5s ease-out;
+}
+
+.card:hover .cardtext {
+  opacity: 1;
+  color: white;
+  transition: 0.5s ease-out;
+}
+
+.card:hover .carddesc {
+  opacity: 1;
+  color: white;
+  transition: 0.5s ease-out;
+}
+
+.cardtext {
+  color: black;
+  font-size: 30px;
+  position: relative;
+  opacity: 0;
+  top: 75px;
+  left: 31px;
+  text-align: left;
+  line-height: 0.8;
+}
+
+.carddesc {
+  color: black;
+  font-size: 18px;
+  position: relative;
+  opacity: 0;
+  top: 90px;
+  left: 12%;
+  right: 12%;
+  width: 74%;
+  font-family: "DINNextW1G", sans-serif !important;
+  font-size: lighter;
+  line-height: 0.95;
+}
+
 /*Font CSS*/
 .valotext {
   color: black;
@@ -158,4 +388,9 @@ body {
 }
 a {
   text-decoration: none;
+}
+
+/*placeholder CSS*/
+.placeholder {
+  padding-top: 15%;
 }

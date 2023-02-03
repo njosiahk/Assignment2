@@ -45,7 +45,7 @@ body {
   /* position: fixed; */
   top: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 100;
 }
 
 .navbar a {
@@ -249,7 +249,7 @@ body {
   background-color: white;
   /* height: 243.5px; */
   height: 100%;
-  z-index: 100;
+  z-index: 5;
   opacity: 0;
 }
 

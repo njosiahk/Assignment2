@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link href="agents.css  " rel="stylesheet" type="text/css" />
+    <link href="puzzle.css  " rel="stylesheet" type="text/css" />
     <script src="Javascript/navbar.js" defer></script>
     <title>VALORANT WIKI: GUESS</title>
   </head>
@@ -44,7 +44,7 @@
           </button>
           <div class="dropdown-content">
             <a class="menu text" href="game.html">BLAST-EM</a>
-            <a class="menu active text" href="quiz.html">GUESS</a>
+            <a class="menu active text" href="puzzle.html">PUZZLE</a>
           </div>
         </div>
         <a href="#about" class="text" style="float: right">LOGIN</a>
@@ -60,5 +60,12 @@
     <nav>
       <img src="HomePage/sitebackground.png" alt="background" class="backimg" />
     </nav>
+
+    <br>
+      <div id="board"></div>
+      <h2>Turns: <span id="turns">0</span></h2>
+      <div id="pieces"></div>
   </body>
+
+  <script src="puzzle.js"></script>
 </html>

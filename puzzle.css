@@ -17,6 +17,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   background-color: #ece8e1;
+  text-align: center;
 }
 
 .backimg {
@@ -145,4 +146,38 @@ body {
     width: 100%;
     text-align: left;
   }
+}
+
+
+#board {
+  width: 403px;
+  height: 403px;
+  border: 2px solid purple;
+
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#board img {
+  width: 79px;
+  height: 79px;
+  border: 0.5px solid lightblue;
+}
+
+
+#pieces {
+  width: 1050px;
+  height: 160px;
+  border: 2px solid purple;
+
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#pieces img {
+  width: 79px;
+  height: 79px;
+  border: 0.5px solid lightblue;
 }

@@ -215,12 +215,13 @@ hr {
 }
 
 .banner-main-content h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: var(--heading);
 }
 
 .banner-main-content h3 {
   padding: 1rem 0;
+  font-size:20px;
 }
 
 .banner-main-content button {
@@ -256,6 +257,7 @@ hr {
   padding: 6px;
   cursor: pointer;
   position: relative;
+  font-size: 18px;
 }
 
 .current-news-head h3:hover::before {
@@ -357,6 +359,7 @@ main a:hover {
 
 .main-container-left > h2 {
   padding: 15px 0 15px 30px;
+  font-size: 40px;
 }
 
 .main-container-left h3 {
@@ -383,6 +386,8 @@ main a:hover {
   margin: 15px 30px;
 }
 
+
+
 /*** main container right */
 
 .main-container-right {
@@ -391,6 +396,7 @@ main a:hover {
 
 .main-container-right > h2 {
   padding: 15px 0 15px 30px;
+  font-size: 40px;
 }
 
 .main-container-right article {
@@ -414,18 +420,18 @@ main a:hover {
   text-align: center;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 18px;
   align-self: center;
 }
 
 .main-container-right article h2 {
-  font-size: 18px;
+  font-size: 28px;
   padding: 10px 0;
   font-family: var(--heading);
 }
 
 .main-container-right article p {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -611,4 +617,73 @@ footer > p {
   .banner {
     grid-template-columns: 1fr 2fr;
   }
+}
+
+/* footer */
+
+#footer {
+  background-color: black;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+#footer a {
+  color: white;
+  transition: var(--trans);
+}
+
+#footer a:hover {
+  color: red;
+}
+
+.footer-links-1 ul,
+.footer-links-2 ul {
+  flex-wrap: wrap;
+  width:100%;
+  justify-content: center;
+}
+
+.footer-links-1 {
+  margin: 1.5rem 0;
+}
+
+.footer-links-1 h2 {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+.footer-links-1 ul li {
+  margin: 1rem;
+}
+
+.footer-links-1 ul li a {
+  font-size: 2.4rem;
+}
+
+.footer-links-2 {
+  margin-bottom: 2rem;
+}
+
+.footer-links-2 ul li {
+  padding: 0 1rem;
+  margin: 1rem 0;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+
+#footer .text {
+  font-size: 1.3rem;
+}
+
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

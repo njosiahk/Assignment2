@@ -400,3 +400,73 @@ a {
 .placeholder {
   padding-top: 15%;
 }
+
+
+/* footer */
+
+#footer {
+  background-color: black;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+#footer a {
+  color: white;
+  transition: var(--trans);
+}
+
+#footer a:hover {
+  color: red;
+}
+
+.footer-links-1 ul,
+.footer-links-2 ul {
+  flex-wrap: wrap;
+  width:94%;
+  justify-content: center;
+}
+
+.footer-links-1 {
+  margin: 1.5rem 0;
+}
+
+.footer-links-1 h2 {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+.footer-links-1 ul li {
+  margin: 1rem;
+}
+
+.footer-links-1 ul li a {
+  font-size: 2.4rem;
+}
+
+.footer-links-2 {
+  margin-bottom: 2rem;
+}
+
+.footer-links-2 ul li {
+  padding: 0 1rem;
+  margin: 1rem 0;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+
+#footer .text {
+  font-size: 1.3rem;
+}
+
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

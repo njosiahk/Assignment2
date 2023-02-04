@@ -471,6 +471,8 @@ article {
 .footer-links-1 ul,
 .footer-links-2 ul {
   flex-wrap: wrap;
+  width:94%;
+  justify-content: center;
 }
 
 .footer-links-1 {
@@ -479,6 +481,7 @@ article {
 
 .footer-links-1 h2 {
   font-family: "Oswald", sans-serif;
+  text-align: center;
 }
 
 .footer-links-1 ul li {
@@ -497,6 +500,7 @@ article {
   padding: 0 1rem;
   margin: 1rem 0;
   border-right: 1px solid white;
+  border-left: 1px solid white;
 }
 
 #footer .text {

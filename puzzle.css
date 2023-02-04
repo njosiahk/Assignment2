@@ -181,3 +181,7 @@ body {
   height: 79px;
   border: 0.5px solid lightblue;
 }
+
+#validation{
+  font-size: large;
+}

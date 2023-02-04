@@ -12,6 +12,7 @@ window.onload = function() {
         for (let c = 0; c < columns; c++) {
             //<img>
             let tile = document.createElement("img");
+            // tile.src = "./images/blank.jpg";
             tile.src = "./images/blank.jpg";
 
             //DRAG FUNCTIONALITY
@@ -44,6 +45,7 @@ window.onload = function() {
 
     for (let i = 0; i < pieces.length; i++) {
         let tile = document.createElement("img");
+        // tile.src = "./images/" + pieces[i] + ".jpg";
         tile.src = "./images/" + pieces[i] + ".jpg";
 
         //DRAG FUNCTIONALITY
@@ -91,3 +93,20 @@ function dragEnd() {
     turns += 1;
     document.getElementById("turns").innerText = turns;
 }
+
+// tile.addEventListener("dragstart", dragStart);
+
+//  function validation(){
+
+//     let currImg = currTile.src;   
+
+//      if (currTile.src.includes("")){
+
+//      }
+//  }
+
+ while (currImg == currTile){
+    pdocument.getElementById("validation").innerHTML = validation;
+ }
+
+

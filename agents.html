@@ -19,6 +19,7 @@
     />
     <link href="agents.css" rel="stylesheet" type="text/css" />
     <script src="Javascript/navbar.js" defer></script>
+    <script src="Javascript/arsenalSelector.js" defer></script>
     <title>VALORANT WIKI: AGENTS</title>
   </head>
   <body>
@@ -77,6 +78,45 @@
               CHOOSE YOUR<br />AGENT
             </div>
           </div>
+
+          <div id="agentSortbox">
+            <button
+              class="btn select text"
+              style="color: white"
+              onclick="filterSelection('all')"
+            >
+              SHOW ALL
+            </button>
+            <button
+              class="btn text"
+              style="color: white"
+              onclick="filterSelection('duelist')"
+            >
+              DUELISTS
+            </button>
+            <button
+              class="btn text"
+              style="color: white"
+              onclick="filterSelection('initiator')"
+            >
+              INITIATORS
+            </button>
+            <button
+              class="btn text"
+              style="color: white"
+              onclick="filterSelection('sentinel')"
+            >
+              SENTINELS
+            </button>
+            <button
+              class="btn text"
+              style="color: white"
+              onclick="filterSelection('controller')"
+            >
+              CONTROLLERS
+            </button>
+          </div>
+
           <div class="agent-flex">
             <div class="card controller">
               <img
@@ -714,7 +754,16 @@
     <footer id="footer">
       <div class="container">
         <div class="footer-links-1">
-          <h2 class="valotext" style="color: white; font-size: 40px;  font-family: 'TungstenBold', sans-serif;">JOIN VALORANT:</h2>
+          <h2
+            class="valotext"
+            style="
+              color: white;
+              font-size: 40px;
+              font-family: 'TungstenBold', sans-serif;
+            "
+          >
+            JOIN VALORANT:
+          </h2>
           <ul class="flex">
             <li>
               <a href="https://www.twitch.tv/valorant"
@@ -722,7 +771,8 @@
               ></a>
             </li>
             <li>
-              <a href="https://twitter.com/PlayVALORANT?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              <a
+                href="https://twitter.com/PlayVALORANT?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
                 ><i class="fab fa-twitter"></i
               ></a>
             </li>
@@ -731,7 +781,7 @@
                 ><i class="fab fa-facebook-f"></i
               ></a>
             </li>
-           
+
             <li>
               <a href="https://www.youtube.com/@PlayVALORANT"
                 ><i class="fab fa-youtube"></i
@@ -747,20 +797,25 @@
 
         <div class="footer-links-2">
           <ul class="flex">
-
             <li>
               <a class="text" href="https://valorantinfo.gg/privacy-policy/"
                 >Privacy Policy</a
               >
             </li>
             <li>
-              <a class="text" href="https://valorantinfo.gg/terms-of-use/">Terms of Use</a>
+              <a class="text" href="https://valorantinfo.gg/terms-of-use/"
+                >Terms of Use</a
+              >
             </li>
             <li>
               <a class="text" href="https://www.riotgames.com/en">Riot Games</a>
             </li>
             <li>
-              <a class="text" href="https://playvalorant.com/en-us/news/announcements/valorant-community-code/">Community Code</a>
+              <a
+                class="text"
+                href="https://playvalorant.com/en-us/news/announcements/valorant-community-code/"
+                >Community Code</a
+              >
             </li>
             <li>
               <a class="text" href="https://youtu.be/g8amyzDHOKw">Gameplay</a>
@@ -768,7 +823,7 @@
           </ul>
         </div>
 
-        <p class="text" style="color: white;">
+        <p class="text" style="color: white">
           &copy; <a href="#">Group 7 IT04</a> All Rights Reserved.
         </p>
       </div>

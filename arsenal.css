@@ -163,7 +163,9 @@ body {
 .header {
   position: relative;
   text-align: left;
-  padding: 11% 5%;
+  padding-top: 11%;
+  padding-bottom: 13%;
+  padding-left: 5%;
 }
 
 .main {
@@ -172,14 +174,42 @@ body {
 
 /*Weapon Navbar CSS*/
 
+#weaponSortbox {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  height: fit-content;
+  width: 156px;
+  padding: 12px 16px;
+  background-color: black;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.btn:hover {
+  color: #ff4655 !important;
+}
+
+.select {
+  background-color: #242424 !important;
+  color: #ff4655 !important;
+}
+
 /*Weapon Flexbox CSS*/
 .weapon-flex {
   width: 80%;
   position: relative;
   display: flex;
   flex-flow: row wrap;
-  left: 10%;
-  right: 10%;
+  left: 10.75%;
+  overflow: hidden;
 }
 
 .card {
@@ -188,6 +218,12 @@ body {
   position: relative;
   padding: 10% 5%;
   border: 0.75px solid rgba(168, 165, 160, 0.4);
+  /* overflow: hidden; */
+  display: none;
+}
+
+.show {
+  display: block !important;
 }
 
 .weaponimg {
@@ -282,7 +318,6 @@ a {
   padding-top: 15%;
 }
 
-
 /* footer */
 
 #footer {
@@ -303,7 +338,7 @@ a {
 .footer-links-1 ul,
 .footer-links-2 ul {
   flex-wrap: wrap;
-  width:94%;
+  width: 94%;
   justify-content: center;
 }
 

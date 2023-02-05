@@ -19,6 +19,7 @@
     />
     <link href="arsenal.css" rel="stylesheet" type="text/css" />
     <script src="Javascript/navbar.js" defer></script>
+    <script src="Javascript/arsenalSelector.js" defer></script>
     <title>VALORANT WIKI: ARSENAL</title>
   </head>
   <body>
@@ -31,16 +32,6 @@
             <a class="menu text" href="agents.html">AGENTS</a>
             <a class="menu active highlight text" href="arsenal.html">ARSENAL</a>
             <a class="menu text" href="news.html">NEWS</a>
-            <!-- <div class="dropdown">
-              <button class="dropbtn text">
-                NEWS
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a class="menu text" href="updates.html">UPDATES</a>
-                <a class="menu text" href="esports.html">E-SPORTS</a>
-              </div>
-            </div> -->
             <div class="dropdown">
               <button class="dropbtn text">
                 GAME
@@ -87,6 +78,18 @@
               CHOOSE YOUR<br>WEAPON
             </div>
           </div>
+
+          <div id="weaponSortbox">
+            <button class="btn select text" style="color: white;" onclick="filterSelection('all')"> SHOW ALL</button>
+            <button class="btn text" style="color: white;" onclick="filterSelection('sidearm')"> SIDEARMS</button>
+            <button class="btn text" style="color: white;" onclick="filterSelection('smg')"> SMGS</button>
+            <button class="btn text" style="color: white;" onclick="filterSelection('shotgun')"> SHOTGUNS</button>
+            <button class="btn text" style="color: white;" onclick="filterSelection('rifle')"> RIFLES</button>
+            <button class="btn text" style="color: white;"onclick="filterSelection('sniper')"> SNIPERS</button>
+            <button class="btn text" style="color: white;" onclick="filterSelection('heavy')"> HEAVIES</button>
+            <button class="btn text" style="color: white;" onclick="filterSelection('melee')"> MELEE</button>
+          </div>
+
           <div class="weapon-flex">
             <div class="card sidearm">
               <img

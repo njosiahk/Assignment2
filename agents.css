@@ -163,7 +163,9 @@ body {
 .header {
   position: relative;
   text-align: left;
-  padding: 11% 5%;
+  padding-top: 11%;
+  padding-bottom: 13%;
+  padding-left: 5%;
 }
 
 .main {
@@ -171,6 +173,33 @@ body {
 }
 
 /*Agent Navbar CSS*/
+#agentSortbox {
+  position: relative;
+  width: 65%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  height: fit-content;
+  width: 200px;
+  padding: 12px 16px;
+  background-color: black;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.btn:hover {
+  color: #ff4655 !important;
+}
+
+.select {
+  background-color: #242424 !important;
+  color: #ff4655 !important;
+}
 
 /*Agent Flexbox CSS*/
 .agent-flex {
@@ -178,8 +207,8 @@ body {
   position: relative;
   display: flex;
   flex-flow: row wrap;
-  left: 10%;
-  right: 10%;
+  left: 10.75%;
+  overflow: hidden;
 }
 
 .card {
@@ -191,6 +220,11 @@ body {
   border: 0.75px solid rgba(168, 165, 160, 0.4);
   border-left: 2px solid rgba(168, 165, 160, 0.4);
   border-right: 2px solid rgba(168, 165, 160, 0.4);
+  display: none;
+}
+
+.show {
+  display: block !important;
 }
 
 .agentimg {
@@ -401,7 +435,6 @@ a {
   padding-top: 15%;
 }
 
-
 /* footer */
 
 #footer {
@@ -422,7 +455,7 @@ a {
 .footer-links-1 ul,
 .footer-links-2 ul {
   flex-wrap: wrap;
-  width:94%;
+  width: 94%;
   justify-content: center;
 }
 
@@ -457,7 +490,6 @@ a {
 #footer .text {
   font-size: 1.3rem;
 }
-
 
 .container {
   max-width: 1440px;

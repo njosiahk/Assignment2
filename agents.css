@@ -164,7 +164,7 @@ body {
   position: relative;
   text-align: left;
   padding-top: 11%;
-  padding-bottom: 13%;
+  padding-bottom: 4%;
   padding-left: 5%;
 }
 
@@ -179,6 +179,7 @@ body {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 4%;
 }
 
 .btn {

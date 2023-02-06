@@ -61,3 +61,12 @@ function hideMole(moleItem) {
     moleItem.classList.remove("mole-appear");
   }, 1000);
 }
+
+function gunMover() {
+  const gunImage = document.querySelector(".gun");
+
+  document.addEventListener("mousemove", function (event) {
+    gun.style.top = event.clientY + "px";
+    gun.style.left = event.clientX + "px";
+  });
+}

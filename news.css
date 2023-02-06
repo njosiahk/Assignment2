@@ -16,7 +16,7 @@ body {
   margin: 0;
   max-width: 100%;
   overflow-x: hidden;
-  background-color: #ece8e1;
+  background-color: #ece8e1 !important;
 }
 
 .backimg {
@@ -221,7 +221,7 @@ hr {
 
 .banner-main-content h3 {
   padding: 1rem 0;
-  font-size:20px;
+  font-size: 20px;
 }
 
 .banner-main-content button {
@@ -382,11 +382,9 @@ main a:hover {
 }
 
 .container-bottom-left {
-  background: #f3f3f3;
+  background: rgba(255, 255, 255, 0.5);
   margin: 15px 30px;
 }
-
-
 
 /*** main container right */
 
@@ -639,7 +637,7 @@ footer > p {
 .footer-links-1 ul,
 .footer-links-2 ul {
   flex-wrap: wrap;
-  width:100%;
+  width: 100%;
   justify-content: center;
 }
 
@@ -674,7 +672,6 @@ footer > p {
 #footer .text {
   font-size: 1.3rem;
 }
-
 
 .container {
   max-width: 1440px;

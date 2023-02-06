@@ -32,7 +32,7 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a class="menu active text" href="game.html">BLAST-EM</a>
+            <a class="menu active text" href="blastem.html">BLAST-EM</a>
             <a class="menu text" href="puzzle.html">PUZZLE</a>
           </div>
         </div>
@@ -150,9 +150,11 @@
           <img src="BlastEm/Cypher_icon.webp" class="mole-clicked" />
         </div>
       </div>
-      <!-- <div class="gun"><img src="BlastEm/gun.png" /></div> -->
+      <div class="gun">
+        <img src="BlastEm/gun.png" onmousemove="gunMover()" />
+      </div>
     </div>
 
-    <script src="game.js"></script>
+    <script src="game.js" defer></script>
   </body>
 </html>

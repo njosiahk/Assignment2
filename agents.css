@@ -166,6 +166,25 @@ body {
   padding-top: 11%;
   padding-bottom: 4%;
   padding-left: 5%;
+  animation: 2s ease-out 0s lineUp;
+}
+
+@keyframes lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 .main {
@@ -180,6 +199,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-bottom: 4%;
+  animation: 2s ease-out 0s lineUp;
 }
 
 .btn {
@@ -210,6 +230,7 @@ body {
   flex-flow: row wrap;
   left: 10.75%;
   overflow: hidden;
+  animation: 2s ease-out 0s lineUp;
 }
 
 .card {

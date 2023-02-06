@@ -81,18 +81,18 @@ function dragDrop() {
     otherTile = this; //this refers to image that is being dropped on
 }
 
-function dragEnd() {
-    if (currTile.src.includes("blank")) {
-        return;
-    }
-    let currImg = currTile.src;
-    let otherImg = otherTile.src;
-    currTile.src = otherImg;
-    otherTile.src = currImg;
+// function dragEnd() {
+//     if (currTile.src.includes("blank")) {
+//         return;
+//     }
+//     let currImg = currTile.src;
+//     let otherImg = otherTile.src;
+//     currTile.src = otherImg;
+//     otherTile.src = currImg;
 
-    turns += 1;
-    document.getElementById("turns").innerText = turns;
-}
+//     turns += 1;
+//     document.getElementById("turns").innerText = turns;
+// }
 
 // tile.addEventListener("dragstart", dragStart);
 
@@ -105,8 +105,35 @@ function dragEnd() {
 //      }
 //  }
 
- while (currImg == currTile){
-    pdocument.getElementById("validation").innerHTML = validation;
- }
+//  while (currImg == currTile){
+//     pdocument.getElementById("validation").innerHTML = validation;
+//  }
 
+function dragEnd() {
+    if (currTile.src.includes("blank")) {
+        return;
+    }
+    let currImg = currTile.src;
+    let otherImg = otherTile.src;
+    currTile.src = otherImg;
+    otherTile.src = currImg;
+
+    turns += 1;
+    document.getElementById("turns").innerText = turns;
+
+    // Check if the puzzle is completed
+    let images = document.querySelectorAll("#pieces img");
+    let isCompleted = true;
+    for (let i = 0; i < images.length; i++) {
+        let expectedSrc = "./images/" + (i + 1) + ".jpg";
+        if (images[i].src !== expectedSrc) {
+            isCompleted = false;
+            break;
+        }
+    }
+
+    if (isCompleted) {
+        window.alert("Congratulations! You have completed the puzzle in " + turns + " turns.");
+    }
+}
 

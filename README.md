@@ -52,3 +52,4 @@ The Login page allow users to log in with their own account or allow new users t
 
 _Insert all references link_
 https://lottiefiles.com/26169-grid
+<a href='https://pngtree.com/so/Gray'>Gray png from pngtree.com/</a>s

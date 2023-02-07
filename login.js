@@ -23,7 +23,7 @@ $(document).ready(function () {
       let jsondata = {
         "name": contactName,
         "email": contactEmail,
-        "message": contactMessage
+        "password": password
       };
   
       //[STEP 4]: Create our AJAX settings. Take note of API key

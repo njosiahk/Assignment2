@@ -1,11 +1,11 @@
 @font-face {
   font-family: "ValoFont";
-  src: url(FOnts/Valorant\ Font.ttf);
+  src: url(../Fonts/Valorant\ Font.ttf);
 }
 
 @font-face {
   font-family: "TungstenBold";
-  src: url(FOnts/FontsFree-Net-Tungsten-Bold.ttf);
+  src: url(../Fonts/FontsFree-Net-Tungsten-Bold.ttf);
 }
 
 .index {
@@ -230,7 +230,7 @@ hr {
   padding: 14px 18px;
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
-  transition: background 1s ease;
+  transition: 1s ease;
 }
 
 .banner-main-content button a {

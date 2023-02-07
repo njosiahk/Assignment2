@@ -1,11 +1,11 @@
 @font-face {
   font-family: "ValoFont";
-  src: url(Fonts/Valorant\ Font.ttf);
+  src: url(../Fonts/Valorant\ Font.ttf);
 }
 
 @font-face {
   font-family: "TungstenBold";
-  src: url(Fonts/FontsFree-Net-Tungsten-Bold.ttf);
+  src: url(../Fonts/FontsFree-Net-Tungsten-Bold.ttf);
 }
 
 /* * {
@@ -390,7 +390,7 @@ article {
   min-height: 100vh;
   margin-bottom: 2rem;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
-    url(HomePage/valWallpaper4.jpg) center/cover no-repeat;
+    url(../HomePage/valWallpaper4.jpg) center/cover no-repeat;
   text-align: center;
   animation: backgroundChange 10s infinite;
 }
@@ -399,17 +399,17 @@ article {
   0%,
   100% {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
-      url(HomePage/valWallpaper5.jpg) center/cover no-repeat;
+      url(../HomePage/valWallpaper5.jpg) center/cover no-repeat;
   }
 
   33% {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
-      url(HomePage/valWallpaper6.jpg) center/cover no-repeat;
+      url(../HomePage/valWallpaper6.jpg) center/cover no-repeat;
   }
 
   66% {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
-      url(HomePage/valWallpaper7.jpg) center/cover no-repeat;
+      url(../HomePage/valWallpaper7.jpg) center/cover no-repeat;
   }
 }
 
@@ -471,7 +471,7 @@ article {
 .footer-links-1 ul,
 .footer-links-2 ul {
   flex-wrap: wrap;
-  width:94%;
+  width: 94%;
   justify-content: center;
 }
 
@@ -537,7 +537,7 @@ article {
   .header-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repear(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
   }
 

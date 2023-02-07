@@ -13,7 +13,8 @@ window.onload = function() {
             //<img>
             let tile = document.createElement("img");
             // tile.src = "./images/blank.jpg";
-            tile.src = "./images/blank.jpg";
+            // tile.src = "./images/blank.jpg";
+            tile.src = "../images/blank.jpg";
 
             //DRAG FUNCTIONALITY
             tile.addEventListener("dragstart", dragStart); //click on image to drag
@@ -46,7 +47,8 @@ window.onload = function() {
     for (let i = 0; i < pieces.length; i++) {
         let tile = document.createElement("img");
         // tile.src = "./images/" + pieces[i] + ".jpg";
-        tile.src = "./images/" + pieces[i] + ".jpg";
+        // tile.src = "./images/" + pieces[i] + ".jpg";
+        tile.src = "../images/" + pieces[i] + ".jpg";
 
         //DRAG FUNCTIONALITY
         tile.addEventListener("dragstart", dragStart); //click on image to drag

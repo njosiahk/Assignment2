@@ -1,11 +1,11 @@
 @font-face {
   font-family: "ValoFont";
-  src: url(FOnts/Valorant\ Font.ttf);
+  src: url(../FOnts/Valorant\ Font.ttf);
 }
 
 @font-face {
   font-family: "TungstenBold";
-  src: url(FOnts/FontsFree-Net-Tungsten-Bold.ttf);
+  src: url(../FOnts/FontsFree-Net-Tungsten-Bold.ttf);
 }
 
 .index {

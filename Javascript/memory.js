@@ -11,19 +11,19 @@ let firstCard = false;
 let secondCard = false;
 //Items array
 const items = [
-  { name: "fade", image: "Agent_Images/Fade_Key_Art_587x900_for_Website.png"},
+  { name: "fade", image: "../Agent_Images/Fade_Key_Art_587x900_for_Website.png"},
   // ./images/blank.jpg"
-  { name: "sova", image: "Agent_Images/V_AGENTS_587x900_ALL_Sova_2.png"},
-  { name: "jett", image: "Agent_Images/V_AGENTS_587x900_Jett.png"},
-  { name: "sage", image: "Agent_Images/V_AGENTS_587x900_sage.png"},
-  { name: "killjoy", image: "Agent_Images/V_AGENTS_587x900_KillJoy_.png"},
-  { name: "kayo", image: "Agent_Images/KAYO_KeyArt_587x900.png"},
-  { name: "breach", image: "Agent_Images/V_AGENTS_587x900_Breach.png"},
-  { name: "reyna", image: "Agent_Images/V_AGENTS_587x900_Reyna.png"},
-  { name: "viper", image: "Agent_Images/V_AGENTS_587x900_Viper.png"},
-  { name: "yoru", image: "Agent_Images/V_AGENTS_587x900_yoru.png"},
-  { name: "skye", image: "Agent_Images/V_AGENTS_587x900_ALL_Skye.png"},
-  { name: "harbor", image: "Agent_Images/Harbor_KeyArt-web.png"},
+  { name: "sova", image: "../Agent_Images/V_AGENTS_587x900_ALL_Sova_2.png"},
+  { name: "jett", image: "../Agent_Images/V_AGENTS_587x900_Jett.png"},
+  { name: "sage", image: "../Agent_Images/V_AGENTS_587x900_sage.png"},
+  { name: "killjoy", image: "../Agent_Images/V_AGENTS_587x900_KillJoy_.png"},
+  { name: "kayo", image: "../Agent_Images/KAYO_KeyArt_587x900.png"},
+  { name: "breach", image: "../Agent_Images/V_AGENTS_587x900_Breach.png"},
+  { name: "reyna", image: "../Agent_Images/V_AGENTS_587x900_Reyna.png"},
+  { name: "viper", image: "../Agent_Images/V_AGENTS_587x900_Viper.png"},
+  { name: "yoru", image: "../Agent_Images/V_AGENTS_587x900_yoru.png"},
+  { name: "skye", image: "../Agent_Images/V_AGENTS_587x900_ALL_Skye.png"},
+  { name: "harbor", image: "../Agent_Images/Harbor_KeyArt-web.png"},
 ];
 //Initial Time
 let seconds = 0,

@@ -1,16 +1,16 @@
 @font-face {
     font-family: "ValoFont";
-    src: url(Fonts/Valorant\ Font.ttf);
+    src: url(../Fonts/Valorant\ Font.ttf);
   }
   
   @font-face {
     font-family: "TungstenBold";
-    src: url(Fonts/FontsFree-Net-Tungsten-Bold.ttf);
+    src: url(../Fonts/FontsFree-Net-Tungsten-Bold.ttf);
   }
   
   @font-face {
     font-family: "DINNextW1G";
-    src: url(Fonts/DINNextW1G-Bold.ttf);
+    src: url(../Fonts/DINNextW1G-Bold.ttf);
   }
   
   /*Navbar CSS*/
@@ -23,7 +23,7 @@
     margin: 0;
     max-width: 100%;
     overflow-x: hidden;
-    background-color: #f4c531;
+    background: url(../MemoryBackground/jettValWallpaperBackground.jpg);
   }
   
   .backimg {
@@ -182,16 +182,17 @@
     box-sizing: content-box;
     width: 26.87em; 
     padding: 2.5em 3em;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background-image: linear-gradient(rgba(188, 196, 191), rgba(188, 196, 191, 0.5));
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 50%;
+    top: 405px;
     border-radius: 0.6em;
     box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
-    /* width: 420px;
-    height: 450px; */
-    
+    z-index:-100;
+    padding-top:1.25em;
+    padding-bottom: 1.25em;
   }
   .game-container {
     position: relative;
@@ -249,6 +250,7 @@
     width: 100%;
     height: 100%;
     background-color: #f4c531;
+    /* background: url(../MemoryBackground/valbackground.webp); */
     top: 0;
     /* z-index:-1; */
   }

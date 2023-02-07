@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link href="puzzle.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/puzzle.css" rel="stylesheet" type="text/css" />
     <script src="Javascript/navbar.js" defer></script>
     <title>VALORANT WIKI: GUESS</title>
   </head>
@@ -44,7 +44,8 @@
           </button>
           <div class="dropdown-content">
             <a class="menu text" href="game.html">BLAST-EM</a>
-            <a class="menu active text" href="puzzle.html">PUZZLE</a>
+            <a class="menu text" href="duohomepage.html">DUOS</a>
+            <a class="menu active text" href="puzzlehomepage.html">PUZZLE</a>
           </div>
         </div>
         <a href="#about" class="text" style="float: right">LOGIN</a>
@@ -61,17 +62,37 @@
       <img src="HomePage/sitebackground.png" alt="background" class="backimg" />
     </nav>
 
-    <br />
+   <div>
+    <img
+          src="../HomePage/sitebackground.png"
+          alt="background"
+          class="backimg"
+        />
+        <script
+          src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+          defer
+        ></script>
+        <lottie-player
+          src="https://assets3.lottiefiles.com/packages/lf20_MTEnXT.json"
+          background="transparent"
+          speed="1"
+          class="backimg"
+          style="opacity: 100%"
+          loop
+          autoplay
+          style="position: fixed; top: 0; z-index: -1"
+        ></lottie-player>
 
 
     <div id="board"></div>
-    <h2 class="text" style="font-size: 40px">
+    <h2 class="text" style="font-size: 30px">
       Turns: <span id="turns">0</span>
     </h2>
     <div id="pieces"></div>
 
     <!-- <p id="validation"></p> -->
   </body>
+</div>
 
-  <script src="Javascript/puzzle.js"></script>
+  <script src="../Javascript/puzzle.js"></script>
 </html>

@@ -115,29 +115,73 @@
       </div>
     </div> -->
     <div class="container">
+      <img
+        src="../HomePage/sitebackground.png"
+        alt="background"
+        class="backimg"
+      />
+      <script
+        src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+        defer
+      ></script>
+      <lottie-player
+        src="https://assets3.lottiefiles.com/packages/lf20_MTEnXT.json"
+        background="transparent"
+        speed="1"
+        class="backimg"
+        style="opacity: 100%"
+        loop
+        autoplay
+        style="position: fixed; top: 0; z-index: -1"
+      ></lottie-player>
       <div class="formbox">
         <div class="header"><h1 class="valotext">vALORaNT</h1></div>
         <form id="register">
           <h2 class="alttext rgHead">REGISTER FOR AN ACCOUNT</h2>
-          <div class="emailbox">
-            <label class="alttext" for="registerEmail">EMAIL ADDRESS</label>
-            <input type="email" id="registerEmail" required />
-            <div class="alttext hint">
-              We'll never share your email with anyone else.
+          <div class="entrybox">
+            <div class="emailbox">
+              <label class="alttext title" for="registerEmail"
+                >EMAIL ADDRESS</label
+              ><br />
+              <input
+                type="email"
+                id="registerEmail"
+                required
+                placeholder="Email Address"
+              />
+              <div class="alttext hint">
+                We'll never share your email with anyone else.
+              </div>
             </div>
-          </div>
-          <div class="userbox">
-            <label class="alttext" for="registerName">USERNAME</label>
-            <input type="alttext" id="registerName" required />
-          </div>
-          <div class="passbox">
-            <label class="alttext" for="registerPassword">PASSWORD</label>
-            <input type="password" id="registerPassword" required />
-            <div class="alttext hint">
-              Minimum password length: 8 characters
+            <div class="userbox">
+              <label class="alttext title" for="registerName">USERNAME</label
+              ><br />
+              <input
+                type="alttext"
+                id="registerName"
+                required
+                placeholder="Username"
+              />
             </div>
+            <div class="passbox">
+              <label class="alttext title" for="registerPassword"
+                >PASSWORD</label
+              ><br />
+              <input
+                type="password"
+                id="registerPassword"
+                required
+                placeholder="Password"
+              />
+              <div class="alttext hint">
+                Minimum password length: 8 characters
+              </div>
+            </div>
+            <button type="submit" id="registerSubmit" class="submit alttext">
+              REGISTER
+            </button>
+            <a href="../login.html">log</a>
           </div>
-          <button type="submit" id="registerSubmit">Register</button>
         </form>
       </div>
     </div>

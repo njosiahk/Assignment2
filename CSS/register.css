@@ -154,6 +154,24 @@ body {
   }
 }
 
+@keyframes lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
 /*main*/
 .container {
   position: relative;
@@ -168,21 +186,90 @@ body {
   position: relative;
   text-align: center;
   font-size: 60px;
-  animation: 2s ease-out 0s lineUp;
-  background-color: greenyellow;
-  margin: 0;
+  top: -40px;
+  animation: 2.5s ease-out 0s lineUp;
 }
 
 .formbox {
   height: 670px;
-  background-color: aqua;
+  background-color: #ece8e1;
+  animation: 2s ease-out 0s lineUp;
 }
 
 .rgHead {
   text-align: center;
   font-size: 40px;
   position: relative;
-  top: 0;
+  top: -120px;
+  width: 90%;
+  left: 5%;
+  border-bottom: 4px solid black;
+}
+
+.entrybox {
+  border-radius: 25px;
+  border: hidden;
+  /* background-color: #666666; */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 35%;
+  width: 605.65px;
+  height: 375px;
+}
+
+input {
+  position: relative;
+  left: 5.25%;
+  width: 80%;
+  padding: 2.5% 4.5%;
+  border: 2px solid rgba(168, 165, 160, 0.4);
+  border-radius: 4px;
+}
+
+input::placeholder {
+  opacity: 50%;
+  position: relative;
+  left: -2%;
+  top: 1%;
+  font-family: "DINNextW1G";
+}
+
+.emailbox {
+  height: 100px;
+}
+
+.title {
+  font-size: 24px;
+  position: relative;
+  left: 5.25%;
+}
+
+.hint {
+  font-size: 14px;
+  position: relative;
+  left: 5.25%;
+  color: grey !important;
+}
+
+.submit {
+  width: 75%;
+  padding: 4% 8%;
+  text-decoration: none;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+  font-size: 40px;
+  margin-top: 20px;
+  color: white !important;
+  background-color: black;
+  border: 2px solid rgba(168, 165, 160, 0.4);
+  border-radius: 14px;
+}
+
+.submit:hover {
+  background-color: #ff4655;
+  /* color: white; */
 }
 /*Font CSS*/
 .valotext {

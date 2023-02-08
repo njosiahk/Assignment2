@@ -1,60 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- TITLE -->
-    <title>Valorant - Login</title>
-
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/spinner.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-</head>
-<body>
-    <!-- LOGIN FORM: START -->
-    <div class="container py-5">
-        <div class="row justify-content-center">
-            <h1 class="text-center m-5"><strong>Valorant</strong></h1>
-            <form class="col-lg-6">
-                <h2>Log in</h2>
-                <div class="mb-3">
-                    <label for="loginEmail" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-4">
-                    <label for="loginPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="loginPassword">
-                </div>
-                <button type="submit" class="btn btn-primary" id="loginSubmit">Log in</button>
-                <p class="mt-2">Don't have an account? <a href="register.html" class="link-info">Register here</a></p>
-                <div id="spinner" class="spinner-border" role="status" style="display: none;">
-                    <span class="visually-hidden">Loading...</span>
-                </div>
-                <span id="errorMessage"></span>
-            </form>
-        </div>
-    </div>
-    <!-- LOGIN FORM: END -->
-
-
-    <!-- JS -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="Normalize.css/node_modules/normalize.css/normalize.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script
-    src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-    crossorigin="anonymous"
-  ></script>
-  <script src="../Javascript/login1.js"></script>
-</body>
+      src="https://kit.fontawesome.com/21c1476e66.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="../CSS/login1.css" rel="stylesheet" type="text/css" />
+    <script src="../Javascript/navbar.js" defer></script>
+    <title>VALORANT WIKI: LOGIN</title>
+  </head>
+  <body>
+    <nav class="navbar" id="myNavbar">
+      <div>
+        <a class="menu valotext" href="index.html" style="padding-top: 27px"
+          >vALORaNT</a
+        >
+        <a class="menu text" href="agents.html">AGENTS</a>
+        <a class="menu text" href="arsenal.html">ARSENAL</a>
+        <a class="menu text" href="news.html">NEWS</a>
+        <div class="dropdown">
+          <button class="dropbtn text">
+            GAME
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a class="menu text" href="blastem.html">BLAST-EM</a>
+            <a class="menu text" href="puzzle.html">PUZZLE</a>
+          </div>
+        </div>
+        <a
+          href="register.html"
+          class="active highlight text"
+          style="float: right"
+          >LOGIN</a
+        >
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="NavSwap()"
+          >&#9776;</a
+        >
+      </div>
+    </nav>
+    <!-- 
+        <body>
+            LOGIN FORM: START
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <h1 class="text-center m-5"><strong>Valorant</strong></h1>
+                    <form class="col-lg-6">
+                        <h2>Log in</h2>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="loginSubmit">Log in</button>
+                        <p class="mt-2">Don't have an account? <a href="register.html" class="link-info">Register here</a></p>
+                        <div id="spinner" class="spinner-border" role="status" style="display: none;">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <span id="errorMessage"></span>
+                    </form>
+                </div>
+            </div>
+            LOGIN FORM: END
+        </body>
+        </html>-->
+    <div class="container">
+      <img
+        src="../HomePage/sitebackground.png"
+        alt="background"
+        class="backimg"
+      />
+      <script
+        src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+        defer
+      ></script>
+      <lottie-player
+        src="https://assets3.lottiefiles.com/packages/lf20_MTEnXT.json"
+        background="transparent"
+        speed="1"
+        class="backimg"
+        style="opacity: 100%"
+        loop
+        autoplay
+        style="position: fixed; top: 0; z-index: -1"
+      ></lottie-player>
+      <div class="formbox">
+        <div class="header"><h1 class="valotext">vALORaNT</h1></div>
+        <form id="register">
+          <h2 class="alttext rgHead">LOG INTO AN ACCOUNT</h2>
+          <div class="entrybox">
+            <div class="emailbox">
+              <label class="alttext title" for="loginEmail">EMAIL ADDRESS</label
+              ><br />
+              <input
+                type="email"
+                id="loginEmail"
+                required
+                placeholder="Email Address"
+              />
+              <div class="alttext hint">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="passbox">
+              <label class="alttext title" for="loginPassword">PASSWORD</label
+              ><br />
+              <input
+                type="password"
+                id="loginPassword"
+                required
+                placeholder="Password"
+              />
+              <div class="alttext hint">
+                Minimum password length: 8 characters
+              </div>
+            </div>
+            <div class="swap alttext">
+              Don't have an account?<a
+                href="register.html"
+                style="color: dodgerblue"
+                >Register Here.</a
+              >
+            </div>
+            <button type="submit" id="registerSubmit" class="submit alttext">
+              LOGIN
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../Javascript/login1.js"></script>
+  </body>
 </html>

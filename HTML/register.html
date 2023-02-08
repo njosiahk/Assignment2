@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="Normalize.css/node_modules/normalize.css/normalize.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/21c1476e66.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="../CSS\register.css" rel="stylesheet" type="text/css" />
+    <script src="../Javascript/navbar.js" defer></script>
+    <title>VALORANT WIKI: REGISTER</title>
+  </head>
+  <body>
+    <nav class="navbar" id="myNavbar">
+      <div>
+        <a class="menu valotext" href="index.html" style="padding-top: 27px"
+          >vALORaNT</a
+        >
+        <a class="menu text" href="agents.html">AGENTS</a>
+        <a class="menu text" href="arsenal.html">ARSENAL</a>
+        <a class="menu text" href="news.html">NEWS</a>
+        <div class="dropdown">
+          <button class="dropbtn text">
+            GAME
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a class="menu text" href="blastem.html">BLAST-EM</a>
+            <a class="menu text" href="puzzle.html">PUZZLE</a>
+          </div>
+        </div>
+        <a
+          href="register.html"
+          class="active highlight text"
+          style="float: right"
+          >LOGIN</a
+        >
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="NavSwap()"
+          >&#9776;</a
+        >
+      </div>
+    </nav>
+    <!-- REGISTER FORM: START -->
+    <!-- <div class="container py-5">
+      <div class="row justify-content-center">
+        <h1 class="text-center m-5"><strong>Valorant</strong></h1>
+        <form class="col-lg-6" id="register">
+          <h2>Register for an account</h2>
+          <div class="mb-3">
+            <label for="registerEmail" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="registerEmail"
+              aria-describedby="emailHelp"
+              required
+            />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div class="mb-4">
+            <label for="registerPassword" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="registerPassword"
+              required
+            />
+            <div id="passwordHelp" class="form-text">
+              Minimum password length: 8 characters
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="registerName" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="registerName"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary" id="registerSubmit">
+            Register
+          </button>
+          <p class="mt-2">
+            Already have an account?
+            <a href="login.html" class="link-info">Log in here.</a>
+          </p>
+          <div
+            id="spinner"
+            class="spinner-border"
+            role="status"
+            style="display: none"
+          >
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <span id="errorMessage"></span>
+        </form>
+      </div>
+    </div> -->
+    <div class="container">
+      <img
+        src="../HomePage/sitebackground.png"
+        alt="background"
+        class="backimg"
+      />
+      <script
+        src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+        defer
+      ></script>
+      <lottie-player
+        src="https://assets3.lottiefiles.com/packages/lf20_MTEnXT.json"
+        background="transparent"
+        speed="1"
+        class="backimg"
+        style="opacity: 100%"
+        loop
+        autoplay
+        style="position: fixed; top: 0; z-index: -1"
+      ></lottie-player>
+      <div class="formbox">
+        <div class="header"><h1 class="valotext">vALORaNT</h1></div>
+        <form id="register">
+          <h2 class="alttext rgHead">REGISTER FOR AN ACCOUNT</h2>
+          <div class="entrybox">
+            <div class="emailbox">
+              <label class="alttext title" for="registerEmail"
+                >EMAIL ADDRESS</label
+              ><br />
+              <input
+                type="email"
+                id="registerEmail"
+                required
+                placeholder="Email Address"
+              />
+              <div class="alttext hint">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="userbox">
+              <label class="alttext title" for="registerName">USERNAME</label
+              ><br />
+              <input
+                type="alttext"
+                id="registerName"
+                required
+                placeholder="Username"
+              />
+            </div>
+            <div class="passbox">
+              <label class="alttext title" for="registerPassword"
+                >PASSWORD</label
+              ><br />
+              <input
+                type="password"
+                id="registerPassword"
+                required
+                placeholder="Password"
+              />
+              <div class="alttext hint">
+                Minimum password length: 8 characters
+              </div>
+            </div>
+            <button type="submit" id="registerSubmit" class="submit alttext">
+              REGISTER
+            </button>
+            <a href="../login.html">log</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- REGISTER FORM: END -->
+
+    <!-- JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js%22%3E"></script> -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js%22%3E"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../Javascript/register.js"></script>
+  </body>
+</html>

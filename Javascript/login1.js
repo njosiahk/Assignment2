@@ -58,7 +58,7 @@ $(document).ready(function () {
                     var loginUsername = username
                     window.loginUsername = username 
                     sessionStorage.setItem("name", loginUsername);
-                    console.log("Ong yi");
+                    console.log(loginUsername);
 
                     // let user = document.getElementById("paraname");
                     // console.log(user);

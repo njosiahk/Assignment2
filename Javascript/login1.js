@@ -1,6 +1,8 @@
 // INITIALISE CONSTANTS
-const dbURL = "https://team7njks-7c44.restdb.io/rest/login";
-const APIKEY = "63e217ae3bc6b255ed0c475f";
+// const dbURL = "https://team7njks-7c44.restdb.io/rest/login";
+const dbURL = "https://team7assg2-2b5b.restdb.io/rest/login";
+// const APIKEY = "63e217ae3bc6b255ed0c475f";
+const APIKEY ="63d62e7f3bc6b255ed0c43df"
 const image = document.createElement("img").src = "../HomePage/user.png";
 
 
@@ -16,6 +18,7 @@ $(document).ready(function () {
         e.preventDefault();
 
         let uEmail = $("#loginEmail").val();
+        console.log(uEmail);
         let uPwd = $("#loginPassword").val();
         
         errorMsg.hide();
@@ -26,19 +29,39 @@ $(document).ready(function () {
 
             let accountExists = false;
             response.map(account => {
-                let responseID = account._id;
+                // let responseID = account._id;
                 let responseEmail = account.email;
+                console.log(responseEmail);
                 let responsePwd = account.password
+                
+                
 
                 if (uEmail === responseEmail && uPwd === responsePwd) {
-                    localStorage.setItem("userAccount", responseID);
+                    let username = account.name
+                    localStorage.setItem("name", username)
+                    localStorage.setItem("userAccount", uEmail);
+                    localStorage.setItem("loginStatus", true);
                     alert("Login successful!");
-                    window.location.assign("blastem.html");
+                    // window.location.assign("blastem.html");
+                    let name = localStorage.getItem("name");
+                    console.log(name);
                     accountExists = true;
                     window.location.href = "index.html"
-                    if (localStorage.getItem("isLoggedIn") == "true"){
-                        $("img").innerText = localStorage.getItem("Name")
+                    // console.log(localstorage.getItem("name"));
+                    if (document.title == "VALORANT WIKI: HOME"){
+                        let user = document.getElementById("paraname");
+                        console.log(user);
+                        user.innerHTML += localStorage.getItem("name");
                     }
+
+                    // let user = document.getElementById("paraname");
+                    // console.log(user);
+                    // user.innerHTML += localStorage.getItem("name");
+                    // accountExists = true;
+                    // window.location.href = "index.html"
+
+                    
+                   
                     // console.log(localStorage.getItem("userAccount"));
                 }
             });

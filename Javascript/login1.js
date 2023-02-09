@@ -1,6 +1,8 @@
 // INITIALISE CONSTANTS
 const dbURL = "https://team7njks-7c44.restdb.io/rest/login";
 const APIKEY = "63e217ae3bc6b255ed0c475f";
+const image = document.createElement("img").src = "../HomePage/user.png";
+
 
 // MAIN CODE
 $(document).ready(function () {
@@ -33,6 +35,10 @@ $(document).ready(function () {
                     alert("Login successful!");
                     window.location.assign("blastem.html");
                     accountExists = true;
+                    window.location.href = "index.html"
+                    if (localStorage.getItem("isLoggedIn") == "true"){
+                        $("img").innerText = localStorage.getItem("Name")
+                    }
                     // console.log(localStorage.getItem("userAccount"));
                 }
             });
@@ -61,3 +67,7 @@ function ajaxFuncGET() {
         }
     });
 }
+
+// if (localStorage.getItem("isLoggedIn") == "true"){
+//     $("i.fa fa-heart").innerText = localStorage.getItem("Name")
+// }

@@ -263,8 +263,10 @@ $(document).ready(function () {
       name: name,
       email: email,
       password: password,
-      // score: 0,
+      moves:0,
+      score:0
     };
+
     console.log(jsondata);
     //[STEP 4]: Create our AJAX settings. Take note of API key
     var settings = {
@@ -285,6 +287,7 @@ $(document).ready(function () {
 
     $.ajax(settings).done(function (response) {
       console.log(response);
+      window.location = "index.html"
     });
     // beforeSend: function () {
     //   // if (username === ""  password1 === ""  password2 == "" || email === "") {

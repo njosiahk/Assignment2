@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="Normalize.css/node_modules/normalize.css/normalize.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/21c1476e66.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="CSS/account.css" rel="stylesheet" type="text/css" />
+    <script src="Javascript/navbar.js" defer></script>
+    <script src="Javascript/arsenalSelector.js" defer></script>
+    <title>VALORANT WIKI: ARSENAL</title>
+  </head>
+  <body>
+    <div class="backline">
+      <nav class="navbar" id="myNavbar">
+        <div>
+          <a class="menu valotext" href="index.html" style="padding-top: 27px"
+            >vALORaNT</a
+          >
+          <a class="menu text" href="agents.html">AGENTS</a>
+          <a class="menu text" href="arsenal.html">ARSENAL</a>
+          <a class="menu text" href="news.html">NEWS</a>
+          <div class="dropdown">
+            <button class="dropbtn text">
+              GAME
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a class="menu text" href="blastem.html">BLAST-EM</a>
+              <a class="menu text" href="duohomepage.html">DUOS</a>
+              <a class="menu text" href="puzzlehomepage.html">PUZZLE</a>
+            </div>
+          </div>
+          <a href="login1.html" class="menu"
+            ><img
+              src="HomePage/user.png"
+              style="
+                filter: invert(100%);
+                height: 40px;
+                width: 40px;
+                position: relative;
+                top: 5px;
+              "
+          /></a>
+          <a
+            href="javascript:void(0);"
+            style="font-size: 15px"
+            class="icon"
+            onclick="NavSwap()"
+            >&#9776;</a
+          >
+        </div>
+      </nav>
+    </div>
+    <div>
+      <div class="container">
+        <img
+          src="HomePage/sitebackground.png"
+          alt="background"
+          class="backimg"
+        />
+        <script
+          src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+          defer
+        ></script>
+        <lottie-player
+          src="https://assets3.lottiefiles.com/packages/lf20_MTEnXT.json"
+          background="transparent"
+          speed="1"
+          class="backimg"
+          style="opacity: 100%"
+          loop
+          autoplay
+          style="position: fixed; top: 0; z-index: -1"
+        ></lottie-player>
+        <div id="leaderboard">
+          <table id="leaderboard-list">
+            <thead>
+              <th id="rank">Rank</th>
+              <th id="name">Name</th>
+              <th id="duopoints">Points</th>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

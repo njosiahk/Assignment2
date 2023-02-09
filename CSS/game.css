@@ -57,6 +57,10 @@ body {
   background-color: #242424 !important;
 }
 
+.navbar {
+  z-index: 1000;
+}
+
 .navbar .icon {
   display: none;
 }
@@ -64,6 +68,7 @@ body {
 .dropdown {
   float: left;
   overflow: hidden;
+  z-index: 1001;
 }
 
 .dropdown .dropbtn {
@@ -74,6 +79,7 @@ body {
   padding: 21px 26px;
   background-color: inherit;
   margin: 0;
+  z-index: 1001;
 }
 
 .dropdown-content {
@@ -82,7 +88,7 @@ body {
   background-color: #292929;
   min-width: 146px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 1001;
 }
 
 .dropdown-content a {
@@ -92,6 +98,7 @@ body {
   text-decoration: none;
   display: block;
   text-align: center;
+  z-index: 1001;
 }
 
 .navbar a:hover,

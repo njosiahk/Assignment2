@@ -1,226 +1,225 @@
 @font-face {
-    font-family: "ValoFont";
-    src: url(../Fonts/Valorant\ Font.ttf);
-  }
-  
-  @font-face {
-    font-family: "TungstenBold";
-    src: url(../Fonts/FontsFree-Net-Tungsten-Bold.ttf);
-  }
-  * {
-    overflow: hidden;
-  }
-  .index {
-    overflow: hidden;
-  }
-  
-  body {
-    margin: 0;
-    max-width: 100%;
-    overflow-x: hidden;
-    background-color: #ece8e1;
-  }
-  
-  .backimg {
-    opacity: 10%;
-    position: fixed;
-    width: 100%;
-    top: 0; /*remove if fixed navbar*/
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    z-index: -1;
-  }
-  
-  .navbar {
-    background-color: black;
-    overflow: hidden;
-    padding-bottom: 0px;
-    height: 90px;
-    /* position: fixed; */
-    top: 0;
-    width: 100%;
-    z-index: 3;
-  }
-  
-  .navbar a {
-    display: flex;
-    float: left;
-    color: white;
-    padding: 21px 26px;
-    font-size: 40px;
-  }
-  
-  .active {
-    color: #ff4655 !important;
-  }
-  
-  .highlight {
-    background-color: #242424 !important;
-  }
-  
-  .navbar .icon {
-    display: none;
-  }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
+  font-family: "ValoFont";
+  src: url(../Fonts/Valorant\ Font.ttf);
+}
+
+@font-face {
+  font-family: "TungstenBold";
+  src: url(../Fonts/FontsFree-Net-Tungsten-Bold.ttf);
+}
+* {
+  overflow: hidden;
+}
+.index {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #ece8e1;
+}
+
+.backimg {
+  opacity: 10%;
+  position: fixed;
+  width: 100%;
+  top: 0; /*remove if fixed navbar*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+}
+
+.navbar {
+  background-color: black;
+  overflow: hidden;
+  padding-bottom: 0px;
+  height: 90px;
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.navbar a {
+  display: flex;
+  float: left;
+  color: white;
+  padding: 21px 26px;
+  font-size: 40px;
+}
+
+.active {
+  color: #ff4655 !important;
+}
+
+.highlight {
+  background-color: #242424 !important;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 40px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 21px 26px;
+  background-color: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #292929;
+  min-width: 146px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: black;
+  color: #ff4655;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(22, 22, 22);
+  color: #ff4655;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child),
   .dropdown .dropbtn {
-    font-size: 40px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 21px 26px;
-    background-color: inherit;
-    margin: 0;
-  }
-  
-  .dropdown-content {
     display: none;
-    position: absolute;
-    background-color: #292929;
-    min-width: 146px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
   }
-  
-  .dropdown-content a {
-    float: none;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-  }
-  
-  .navbar a:hover,
-  .dropdown:hover .dropbtn {
-    background-color: black;
-    color: #ff4655;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: rgb(22, 22, 22);
-    color: #ff4655;
-  }
-  
-  .dropdown:hover .dropdown-content {
+  .navbar a.icon {
+    float: right;
     display: block;
   }
-  
-  @media screen and (max-width: 600px) {
-    .navbar a:not(:first-child),
-    .dropdown .dropbtn {
-      display: none;
-    }
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .navbar.responsive {
-      position: relative;
-    }
-    .navbar.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .navbar.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .navbar.responsive .dropdown {
-      float: none;
-    }
-    .navbar.responsive .dropdown-content {
-      position: relative;
-    }
-    .navbar.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-  
-  /*Header Text*/
-  .headertext {
-    font-size: 100px;
-    line-height: 0.9;
-  }
-  
-  .header {
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
     position: relative;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
     text-align: left;
-    padding-top: 11%;
-    padding-bottom: 4%;
-    padding-left: 5%;
-    animation: 2s ease-out 0s lineUp;
   }
-  
-  @keyframes lineUp {
-    0% {
-      opacity: 0;
-      transform: translateY(80%);
-    }
-    20% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
+  .navbar.responsive .dropdown {
+    float: none;
   }
-  
-  .description {
-    text-align: right;
-    position: absolute;
-    right: 5%;
-    top: 60%;
-    animation: 2s ease-out 0s lineUp;
+  .navbar.responsive .dropdown-content {
+    position: relative;
   }
-  
-  .startButton {
-    color: white !important;
-    background-color: black;
-    position: absolute;
-    width: 20%;
-    height: 10%;
-    font-size: 60px;
-    text-align: center;
-    padding: 1% 2%;
-    border-radius: 13px;
-    border: hidden;
-    left: 5%;
-    bottom: 27%;
-    animation: 4s ease-out 0s lineUp;
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
   }
-  
-  .startButton:hover {
-    background-color: #ff4655;
-    transition: 0.5s ease;
+}
+
+/*Header Text*/
+.headertext {
+  font-size: 100px;
+  line-height: 0.9;
+}
+
+.header {
+  position: relative;
+  text-align: left;
+  padding-top: 11%;
+  padding-bottom: 4%;
+  padding-left: 5%;
+  animation: 2s ease-out 0s lineUp;
+}
+
+@keyframes lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
   }
-  
-  /*Font CSS*/
-  .valotext {
-    color: black;
-    font-family: "ValoFont";
+  20% {
+    opacity: 0;
   }
-  .text {
-    color: black;
-    font-family: "TungstenBold", sans-serif;
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
   }
-  a {
-    text-decoration: none;
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
-  
+}
+
+.description {
+  text-align: right;
+  position: absolute;
+  right: 5%;
+  top: 60%;
+  animation: 2s ease-out 0s lineUp;
+}
+
+.startButton {
+  color: white !important;
+  background-color: black;
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  font-size: 60px;
+  text-align: center;
+  padding: 1% 2%;
+  border-radius: 13px;
+  border: hidden;
+  left: 5%;
+  bottom: 27%;
+  animation: 4s ease-out 0s lineUp;
+}
+
+.startButton:hover {
+  background-color: #ff4655;
+  transition: 0.5s ease;
+}
+
+/*Font CSS*/
+.valotext {
+  color: black;
+  font-family: "ValoFont";
+}
+.text {
+  color: black;
+  font-family: "TungstenBold", sans-serif;
+}
+a {
+  text-decoration: none;
+}

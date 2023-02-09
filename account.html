@@ -17,7 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link href="CSS/arsenal.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/account.css" rel="stylesheet" type="text/css" />
     <script src="Javascript/navbar.js" defer></script>
     <script src="Javascript/arsenalSelector.js" defer></script>
     <title>VALORANT WIKI: ARSENAL</title>
@@ -30,7 +30,7 @@
             >vALORaNT</a
           >
           <a class="menu text" href="agents.html">AGENTS</a>
-          <a class="menu active highlight text" href="arsenal.html">ARSENAL</a>
+          <a class="menu text" href="arsenal.html">ARSENAL</a>
           <a class="menu text" href="news.html">NEWS</a>
           <div class="dropdown">
             <button class="dropbtn text">
@@ -64,14 +64,121 @@
         </div>
       </nav>
     </div>
-
-
+    <div class="container">
+      <img src="HomePage/sitebackground.png" alt="background" class="backimg" />
+      <script
+        src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+        defer
+      ></script>
+      <lottie-player
+        src="https://assets3.lottiefiles.com/packages/lf20_MTEnXT.json"
+        background="transparent"
+        speed="1"
+        class="backimg"
+        style="opacity: 100%"
+        loop
+        autoplay
+        style="position: fixed; top: 0; z-index: -1"
+      ></lottie-player>
+      <!-- <div class="formbox">
+        <form id="register">
+          <h2 class="alttext rgHead">PROFILE</h2>
+          <div class="entrybox">
+            <div class="emailbox">
+              <label class="alttext title" for="loginEmail">EMAIL ADDRESS</label
+              ><br />
+              <input
+                type="email"
+                id="loginEmail"
+                required
+                placeholder="Email Address"
+              />
+              <div class="alttext hint">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="passbox">
+              <label class="alttext title" for="loginPassword">PASSWORD</label
+              ><br />
+              <input
+                type="password"
+                id="loginPassword"
+                required
+                placeholder="Password"
+              />
+              <div class="alttext hint">
+                Minimum password length: 8 characters
+              </div>
+            </div>
+            <div class="swap alttext">
+              Don't have an account?<a
+                href="register.html"
+                style="color: dodgerblue"
+                >Register Here.</a
+              >
+            </div>
+            <button type="submit" id="loginSubmit" class="submit alttext">
+              LOGIN
+            </button>
+          </div>
+        </form>
+      </div> -->
+      <div class="header"><h1 class="alttext">PROFILE</h1></div>
+      <div class="infobox">
+        <div class="leftbox">
+          <div class="mailbox">
+            <h2 class="alttext title">EMAIL ADDRESS:</h2>
+            <br />
+            <div class="alttext display">EMAIL</div>
+          </div>
+          <div class="namebox">
+            <h2 class="alttext title">USERNAME:</h2>
+            <br />
+            <div class="alttext display">USERNAME</div>
+          </div>
+        </div>
+        <div class="rightbox">
+          <div class="passbox">
+            <div class="inputPass">
+              <label class="alttext title" for="loginPassword">PASSWORD:</label
+              ><br />
+              <input
+                type="password"
+                id="loginPassword"
+                required
+                placeholder="Password"
+              />
+              <div class="alttext hint">
+                Minimum password length: 8 characters
+              </div>
+            </div>
+            <div class="confirmPass">
+              <label class="alttext title" for="loginPassword"
+                >CONFIRM PASSWORD:</label
+              ><br />
+              <input
+                type="password"
+                id="loginPassword"
+                required
+                placeholder="Password"
+              />
+              <div class="alttext hint">Enter the same password again.</div>
+            </div>
+            <!-- <div class="alttext hint">
+              Minimum password length: 8 characters
+            </div> -->
+          </div>
+          <button class="btn alttext confirm">CONFIRM CHANGES</button>
+          <button class="btn alttext delete">DELETE ACCOUNT</button>
+        </div>
+      </div>
+    </div>
     <script
-    src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-    crossorigin="anonymous"
-  ></script>
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="../Javascript/account.js"></script>
+    <script src="Javascript/account.js"></script>
   </body>
 </html>

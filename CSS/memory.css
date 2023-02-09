@@ -1,291 +1,289 @@
 @font-face {
-    font-family: "ValoFont";
-    src: url(../Fonts/Valorant\ Font.ttf);
-  }
-  
-  @font-face {
-    font-family: "TungstenBold";
-    src: url(../Fonts/FontsFree-Net-Tungsten-Bold.ttf);
-  }
-  
-  @font-face {
-    font-family: "DINNextW1G";
-    src: url(../Fonts/DINNextW1G-Bold.ttf);
-  }
-  
-  /*Navbar CSS*/
-  
-  .index {
-    overflow: hidden;
-  }
-  
-  body {
-    margin: 0;
-    max-width: 100%;
-    overflow-x: hidden;
-    background: url(../MemoryBackground/jettValWallpaperBackground.jpg);
-  }
-  
-  .backimg {
-    opacity: 10%;
-    position: fixed;
-    width: 100%;
-    top: 0; /*remove if fixed navbar*/
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    z-index: -1;
-  }
-  
-  .navbar {
-    background-color: black;
-    overflow: hidden;
-    padding-bottom: 0px;
-    height: 90px;
-    /* position: fixed; */
-    top: 0;
-    width: 100%;
-    z-index: 3;
-  }
-  
-  .navbar a {
-    display: flex;
-    float: left;
-    color: white;
-    padding: 21px 26px;
-    font-size: 40px;
-  }
-  
-  .active {
-    color: #ff4655 !important;
-  }
-  
-  .highlight {
-    background-color: #242424 !important;
-  }
-  
-  .navbar .icon {
-    display: none;
-  }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
+  font-family: "ValoFont";
+  src: url(../Fonts/Valorant\ Font.ttf);
+}
+
+@font-face {
+  font-family: "TungstenBold";
+  src: url(../Fonts/FontsFree-Net-Tungsten-Bold.ttf);
+}
+
+@font-face {
+  font-family: "DINNextW1G";
+  src: url(../Fonts/DINNextW1G-Bold.ttf);
+}
+
+/*Navbar CSS*/
+
+.index {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: url(../MemoryBackground/jettValWallpaperBackground.jpg);
+}
+
+.backimg {
+  opacity: 10%;
+  position: fixed;
+  width: 100%;
+  top: 0; /*remove if fixed navbar*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+}
+
+.navbar {
+  background-color: black;
+  overflow: hidden;
+  padding-bottom: 0px;
+  height: 90px;
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.navbar a {
+  display: flex;
+  float: left;
+  color: white;
+  padding: 21px 26px;
+  font-size: 40px;
+}
+
+.active {
+  color: #ff4655 !important;
+}
+
+.highlight {
+  background-color: #242424 !important;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 40px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 21px 26px;
+  background-color: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #292929;
+  min-width: 146px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: black;
+  color: #ff4655;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(22, 22, 22);
+  color: #ff4655;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child),
   .dropdown .dropbtn {
-    font-size: 40px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 21px 26px;
-    background-color: inherit;
-    margin: 0;
-  }
-  
-  .dropdown-content {
     display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .icon {
     position: absolute;
-    background-color: #292929;
-    min-width: 146px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    right: 0;
+    top: 0;
   }
-  
-  .dropdown-content a {
+  .navbar.responsive a {
     float: none;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
     display: block;
-    text-align: center;
+    text-align: left;
   }
-  
-  .navbar a:hover,
-  .dropdown:hover .dropbtn {
-    background-color: black;
-    color: #ff4655;
+  .navbar.responsive .dropdown {
+    float: none;
   }
-  
-  .dropdown-content a:hover {
-    background-color: rgb(22, 22, 22);
-    color: #ff4655;
+  .navbar.responsive .dropdown-content {
+    position: relative;
   }
-  
-  .dropdown:hover .dropdown-content {
+  .navbar.responsive .dropdown .dropbtn {
     display: block;
+    width: 100%;
+    text-align: left;
   }
-  
-  @media screen and (max-width: 600px) {
-    .navbar a:not(:first-child),
-    .dropdown .dropbtn {
-      display: none;
-    }
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .navbar.responsive {
-      position: relative;
-    }
-    .navbar.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .navbar.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .navbar.responsive .dropdown {
-      float: none;
-    }
-    .navbar.responsive .dropdown-content {
-      position: relative;
-    }
-    .navbar.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-  
-  .valotext {
-    color: black;
-    font-family: "ValoFont" !important;
-  }
-  .text {
-    color: black;
-    font-family: "TungstenBold", sans-serif !important;
-  }
-  a {
-    text-decoration: none;
-  }
+}
 
-
-
-
-
+.valotext {
+  color: black;
+  font-family: "ValoFont" !important;
+}
+.text {
+  color: black;
+  font-family: "TungstenBold", sans-serif !important;
+}
+a {
+  text-decoration: none;
+}
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
- 
-  .wrapper {
-    box-sizing: content-box;
-    width: 26.87em; 
-    padding: 2.5em 3em;
-    /* background-color: #ffffff; */
-    background-image: linear-gradient(rgba(188, 196, 191), rgba(188, 196, 191, 0.5));
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 405px;
-    border-radius: 0.6em;
-    box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
-    z-index:-100;
-    padding-top:1.25em;
-    padding-bottom: 1.25em;
-  }
-  .game-container {
-    position: relative;
-    width: 100%; 
-    display: grid;
-    gap: 0.6em;
-  }
-  .stats-container {
-    text-align: right;
-    margin-bottom: 1.2em;
-  }
-  .stats-container span {
-    font-weight: 600;
-  }
-  .card-container {
-    position: relative;
-    width: 6.25em;
-    height: 6.25em;
-    cursor: pointer;
-  }
-  .card-before,
-  .card-after {
-    position: absolute;
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 4px solid #000000;
-    transition: transform 0.7s ease-out;
-    backface-visibility: hidden;
-  }
-  .card-before {
-    background-color: #f4c531;
-    font-size: 2.8em;
-    font-weight: 600;
-  }
-  .card-after {
-    background-image: linear-gradient(rgba(15, 24, 35), rgba(15, 24, 35, 0.5));
-    transform: rotateY(180deg);
-  }
-  .card-container.flipped .card-before {
-    transform: rotateY(180deg);
-  }
-  .card-container.flipped .card-after {
-    transform: rotateY(0deg);
-  }
-  .controls-container {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: #f4c531;
-    /* background: url(../MemoryBackground/valbackground.webp); */
-    top: 0;
-    /* z-index:-1; */
-  }
-  button {
-    border: none;
-    border-radius: 0.3em;
-    padding: 1em 1.5em;
-    cursor: pointer;
-  }
-  #stop {
-    font-size: 1.1em;
-    display: block;
-    margin: 1.1em auto 0 auto;
-    background-color: #000000;
-    color: #ffffff;
-  }
-  .controls-container button {
-    font-size: 1.3em;
-    box-shadow: 0 0.6em 2em rgba(86, 66, 0, 0.2);
-  }
-  .hide {
-    display: none;
-  }
-  #result {
-    text-align: center;
-  }
-  #result h2 {
-    font-size: 2.5em;
-  }
-  #result h4 {
-    font-size: 1.8em;
-    margin: 0.6em 0 1em 0;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
-  .image{
-    width:88px;
-    height:88px;
-  }
+.wrapper {
+  box-sizing: content-box;
+  width: 26.87em;
+  padding: 2.5em 3em;
+  /* background-color: #ffffff; */
+  background-image: linear-gradient(
+    rgba(188, 196, 191),
+    rgba(188, 196, 191, 0.5)
+  );
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 405px;
+  border-radius: 0.6em;
+  box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
+  z-index: -100;
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+}
+.game-container {
+  position: relative;
+  width: 100%;
+  display: grid;
+  gap: 0.6em;
+}
+.stats-container {
+  text-align: right;
+  margin-bottom: 1.2em;
+}
+.stats-container span {
+  font-weight: 600;
+}
+.card-container {
+  position: relative;
+  width: 6.25em;
+  height: 6.25em;
+  cursor: pointer;
+}
+.card-before,
+.card-after {
+  position: absolute;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #000000;
+  transition: transform 0.7s ease-out;
+  backface-visibility: hidden;
+}
+.card-before {
+  background-color: #f4c531;
+  font-size: 2.8em;
+  font-weight: 600;
+}
+.card-after {
+  background-image: linear-gradient(rgba(15, 24, 35), rgba(15, 24, 35, 0.5));
+  transform: rotateY(180deg);
+}
+.card-container.flipped .card-before {
+  transform: rotateY(180deg);
+}
+.card-container.flipped .card-after {
+  transform: rotateY(0deg);
+}
+.controls-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #f4c531;
+  /* background: url(../MemoryBackground/valbackground.webp); */
+  top: 0;
+  /* z-index:-1; */
+}
+button {
+  border: none;
+  border-radius: 0.3em;
+  padding: 1em 1.5em;
+  cursor: pointer;
+}
+#stop {
+  font-size: 1.1em;
+  display: block;
+  margin: 1.1em auto 0 auto;
+  background-color: #000000;
+  color: #ffffff;
+}
+.controls-container button {
+  font-size: 1.3em;
+  box-shadow: 0 0.6em 2em rgba(86, 66, 0, 0.2);
+}
+.hide {
+  display: none;
+}
+#result {
+  text-align: center;
+}
+#result h2 {
+  font-size: 2.5em;
+}
+#result h4 {
+  font-size: 1.8em;
+  margin: 0.6em 0 1em 0;
+}
+
+.image {
+  width: 88px;
+  height: 88px;
+}

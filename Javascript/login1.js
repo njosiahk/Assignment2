@@ -1,8 +1,8 @@
 // INITIALISE CONSTANTS
-// const dbURL = "https://team7njks-7c44.restdb.io/rest/login";
-const dbURL = "https://team7assg2-2b5b.restdb.io/rest/login";
-// const APIKEY = "63e217ae3bc6b255ed0c475f";
-const APIKEY ="63d62e7f3bc6b255ed0c43df"
+const dbURL = "https://team7njks-7c44.restdb.io/rest/login";
+// const dbURL = "https://team7assg2-2b5b.restdb.io/rest/login";
+const APIKEY = "63e217ae3bc6b255ed0c475f";
+// const APIKEY ="63d62e7f3bc6b255ed0c43df"
 const image = document.createElement("img").src = "../HomePage/user.png";
 
 
@@ -41,18 +41,24 @@ $(document).ready(function () {
                     localStorage.setItem("name", username)
                     localStorage.setItem("userAccount", uEmail);
                     localStorage.setItem("loginStatus", true);
-                    alert("Login successful!");
+                    // alert("Login successful!");
                     // window.location.assign("blastem.html");
                     let name = localStorage.getItem("name");
                     console.log(name);
                     accountExists = true;
-                    window.location.href = "index.html"
+                    window.location = "index.html"
                     // console.log(localstorage.getItem("name"));
-                    if (document.title == "VALORANT WIKI: HOME"){
-                        let user = document.getElementById("paraname");
-                        console.log(user);
-                        user.innerHTML += localStorage.getItem("name");
-                    }
+
+                    // if (document.title == "VALORANT WIKI: HOME"){
+                    //     let user = document.getElementById("paraname");
+                    //     console.log(user);
+                    //     user.innerHTML += localStorage.getItem("name");
+                    // }
+
+                    var loginUsername = username
+                    window.loginUsername = username 
+                    sessionStorage.setItem("name", loginUsername);
+                    console.log("Ong yi");
 
                     // let user = document.getElementById("paraname");
                     // console.log(user);

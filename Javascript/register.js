@@ -270,13 +270,13 @@ $(document).ready(function () {
     var settings = {
       async: true,
       crossDomain: true,
-      // url: "https://team7njks-7c44.restdb.io/rest/login",
-      url: "https://team7assg2-2b5b.restdb.io/rest/login",
+      url: "https://team7njks-7c44.restdb.io/rest/login",
+      // url: "https://team7assg2-2b5b.restdb.io/rest/login",
       method: "POST",
       headers: {
         "content-type": "application/json",
-        // "x-apikey": "63e217ae3bc6b255ed0c475f",
-        "x-apikey": "63d62e7f3bc6b255ed0c43df",
+        "x-apikey": "63e217ae3bc6b255ed0c475f",
+        // "x-apikey": "63d62e7f3bc6b255ed0c43df",
         "cache-control": "no-cache",
       },
       processData: false,

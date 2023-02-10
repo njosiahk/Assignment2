@@ -54,7 +54,18 @@
                 top: 5px;
               "
           /></a>
-          <span id = "loginName" class = "menu text" style = "z-index:100; color:white; position: absolute; top: 25px; font-size: 35px;">Name</span>
+          <span
+            id="loginName"
+            class="menu text"
+            style="
+              z-index: 100;
+              color: white;
+              position: absolute;
+              top: 25px;
+              font-size: 35px;
+            "
+            >Name</span
+          >
           <a
             href="javascript:void(0);"
             style="font-size: 15px"
@@ -81,54 +92,37 @@
         autoplay
         style="position: fixed; top: 0; z-index: -1"
       ></lottie-player>
-      
+
       <div class="header"><h1 class="alttext">PROFILE</h1></div>
       <div class="infobox">
         <div class="leftbox">
           <div class="mailbox">
             <h2 class="alttext title">EMAIL ADDRESS:</h2>
             <br />
-            <div class="alttext display" id = "emailaddress" style = "color:white; position: absolute; font-size: 25px;">email</div>
+            <div
+              class="alttext display"
+              id="emailaddress"
+              style="color: white; position: absolute; font-size: 25px"
+            >
+              email
+            </div>
           </div>
           <div class="namebox">
             <h2 class="alttext title">USERNAME:</h2>
             <br />
-            <div class="alttext display" id = "acctName" style = "color:white; position: absolute; font-size: 25px;">Username</div>
+            <div
+              class="alttext display"
+              id="acctName"
+              style="color: white; position: absolute; font-size: 25px"
+            >
+              Username
+            </div>
           </div>
         </div>
         <div class="rightbox">
-          <div class="passbox">
-            <div class="inputPass">
-              <label class="alttext title" for="loginPassword">UPDATE PASSWORD:</label
-              ><br />
-              <input
-                type="password"
-                id="loginPassword"
-                required
-                placeholder="Password"
-              />
-              <div class="alttext hint">
-                Minimum password length: 8 characters
-              </div>
-            </div>
-            <div class="confirmPass">
-              <label class="alttext title" for="loginPassword"
-                >CONFIRM PASSWORD:</label
-              ><br />
-              <input
-                type="password"
-                id="loginPassword"
-                required
-                placeholder="Password"
-              />
-              <div class="alttext hint">Enter the same password again.</div>
-            </div>
-            <!-- <div class="alttext hint">
-              Minimum password length: 8 characters
-            </div> -->
-          </div>
-          <button id="confirm">CONFIRM CHANGES</button>
-          <button id="delete">LOG OUT ACCOUNT</button>
+          <button id="delete" class="btn alttext delete">
+            LOG OUT ACCOUNT
+          </button>
         </div>
       </div>
     </div>
@@ -139,7 +133,7 @@
     ></script>
 
     <script src="Javascript/account.js"></script>
-    <script src = "Javascript/name.js"></script>
+    <script src="Javascript/name.js"></script>
     <script src="Javascript/login1.js"></script>
   </body>
 </html>

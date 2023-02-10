@@ -75,13 +75,16 @@ console.log("hello")
 
 $(document).ready(function () {
   // const APIKEY = "63e217ae3bc6b255ed0c475f"; (Nic)
-  const APIKEY = "63d62e7f3bc6b255ed0c43df";
+  // const APIKEY = "63d62e7f3bc6b255ed0c43df"; (jk)
+  const APIKEY = "63e63506478852088da6801f";
 
   var settings = {
     async: true,
     crossDomain: true,
-    url: "https://team7assg2-2b5b.restdb.io/rest/login?q={}&sort=moves&dir=1",
+    // url: "https://team7assg2-2b5b.restdb.io/rest/login?q={}&sort=moves&dir=1",
     // url: "https://team7njks-7c44.restdb.io/rest/login?q={}&sort=moves&dir=1",
+    URL : "https://team7finaltestassg2-46c0.restdb.io/rest/login",
+    
     method: "GET",
     headers: {
       "content-type": "application/json",

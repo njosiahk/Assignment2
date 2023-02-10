@@ -73,7 +73,8 @@ function gunMover() {
 
 $(document).ready(function () {
   // const APIKEY = "63e217ae3bc6b255ed0c475f"; //(nic)
-  const APIKEY = "63d62e7f3bc6b255ed0c43df"; //(team7asg2)
+  // const APIKEY = "63d62e7f3bc6b255ed0c43df"; //(team7asg2)
+  const APIKEY = "63e63506478852088da6801f";
 
   let id = sessionStorage.getItem("id");
 
@@ -81,7 +82,8 @@ $(document).ready(function () {
   var settings = {
     async: true,
     crossDomain: true,
-    url: `https://team7assg2-2b5b.restdb.io/rest/login/${id}`,
+    // url: `https://team7assg2-2b5b.restdb.io/rest/login/${id}`,
+    url: `https://team7finaltestassg2-46c0.restdb.io/rest/login/${id}`,
     method: "PATCH",
     headers: {
       "content-type": "application/json",
@@ -99,8 +101,9 @@ $(document).ready(function () {
   var settings = {
     async: true,
     crossDomain: true,
-    url: "https://team7assg2-2b5b.restdb.io/rest/login?q={}&sort=score&dir=1",
+    // url: "https://team7assg2-2b5b.restdb.io/rest/login?q={}&sort=score&dir=1",
     // url: "https://team7njks-7c44.restdb.io/rest/login?q={}&sort=scire&dir=1",
+    url: "https://team7finaltestassg2-46c0.restdb.io/rest/login?q={}&sort=score&dir=1",
     method: "GET",
     headers: {
       "content-type": "application/json",

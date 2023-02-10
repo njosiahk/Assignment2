@@ -273,12 +273,14 @@ $(document).ready(function () {
       async: true,
       crossDomain: true,
       //url: "https://team7njks-7c44.restdb.io/rest/login",
-      url: "https://team7assg2-2b5b.restdb.io/rest/login",
+      // url: "https://team7assg2-2b5b.restdb.io/rest/login",
+      url: "https://team7finaltestassg2-46c0.restdb.io/rest/login?q={}&sort=score&dir=1",
       method: "POST",
       headers: {
         "content-type": "application/json",
-        //"x-apikey": "63e217ae3bc6b255ed0c475f",
-        "x-apikey": "63d62e7f3bc6b255ed0c43df",
+        //"x-apikey": "63e217ae3bc6b255ed0c475f", (nic)
+        // "x-apikey": "63d62e7f3bc6b255ed0c43df", (jk)
+        "x-apikey": "63e63506478852088da6801f",
         "cache-control": "no-cache",
       },
       processData: false,

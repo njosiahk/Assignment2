@@ -91,10 +91,10 @@ $(document).ready(function () {
   $.ajax(settings).done(function (response) {
     limit = 10;
     let content = "";
+    var r = 1;
     for (var i = 0; i < response.length && i < limit; i++) {
-      var r = 0;
       if (response[i].moves > 0) {
-        content = `${content}<tr id='${response[i]._id}'><td>${r + 1}</td><td>${
+        content = `${content}<tr id='${response[i]._id}'><td>${r++}</td><td>${
           response[i].name
         }</td>
             <td>${response[i].moves}</td>`;

@@ -156,7 +156,7 @@ body {
 
 /*Header Text*/
 .headertext {
-  font-size: 100px;
+  font-size: 170px;
   line-height: 0.9;
 }
 
@@ -408,3 +408,126 @@ a {
   align-items: center;
   justify-content: center;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .backimg {
+    display: none;
+  }
+  .headertext {
+    max-width: 100%;
+    position: relative;
+    left: 5%;
+    font-size: 70px;
+    overflow: hidden;
+  }
+  #weaponSortbox {
+    max-width: 60%;
+    flex-flow: column wrap;
+    display: none;
+  }
+  .weapon-flex {
+    width: 160%;
+    flex-flow: column;
+  }
+  .weaponname {
+    top: 0;
+    left: 15px;
+    font-size: 55px;
+  }
+  .weaponflavortext {
+    bottom: 2px;
+    left: 7px;
+    font-size: 16px;
+    width: 90%;
+  }
+  .cardtext {
+    overflow: hidden;
+    font-size: 18px;
+    top: 27%;
+    left: 5%;
+  }
+  .carddesc {
+    overflow: hidden;
+    /* display: none; */
+    top: 33%;
+    left: 16%;
+    font-size: 16px;
+  }
+  .weaponimg {
+    filter: drop-shadow(10px 12px 0 rgba(15, 25, 35, 0.17));
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .backimg {
+    display: none;
+  }
+  .headertext {
+    max-width: 100%;
+    position: relative;
+    left: 5%;
+    font-size: 70px;
+    overflow: hidden;
+  }
+  #weaponSortbox {
+    max-width: 60%;
+    flex-flow: column wrap;
+    display: none;
+  }
+  .weapon-flex {
+    width: 160%;
+    flex-flow: column;
+  }
+  .weaponname {
+    top: 0;
+    left: 15px;
+    font-size: 55px;
+  }
+  .weaponflavortext {
+    bottom: 2px;
+    left: 7px;
+    font-size: 16px;
+    width: 90%;
+  }
+  .cardtext {
+    overflow: hidden;
+    font-size: 18px;
+    top: 27%;
+    left: 5%;
+  }
+  .carddesc {
+    overflow: hidden;
+    /* display: none; */
+    top: 33%;
+    left: 16%;
+    font-size: 16px;
+  }
+  .weaponimg {
+    filter: drop-shadow(10px 12px 0 rgba(15, 25, 35, 0.17));
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+  
+} */

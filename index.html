@@ -15,9 +15,9 @@
     />
     <link href="CSS/index.css" rel="stylesheet" type="text/css" />
     <script src="Javascript/navbar.js" defer></script>
-    <script src="../Javascript/login1.js"></script>
+    <!-- <script src="../Javascript/login1.js"></script>
     <script src="../Javascript/account.js"></script>
-    <script src="../Javascript/name.js"></script>
+    <script src="../Javascript/name.js"></script> -->
     <!-- <link rel="stylesheet" href="/css/all.min.css" /> -->
     <title>VALORANT WIKI: HOME</title>
   </head>
@@ -54,7 +54,7 @@
             <a class="menu text" href="puzzlehomepage.html">PUZZLE</a>
           </div>
         </div>
-        <a href="login1.html" class="menu"
+        <a href="login1.html" id = "loginStatus" class="menu"
           ><img 
             src="HomePage/user.png"
             style="
@@ -65,7 +65,7 @@
               top: 5px;
             "
         /></a>
-        <span id = "loginName"></span>
+        <span id = "loginName" class = "menu text" style = "z-index:100; color:white; position: absolute; top: 25px; font-size: 35px;">Name</span>
         <a
           href="javascript:void(0);"
           style="font-size: 15px"
@@ -495,8 +495,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- <script src="../Javascript/login1.js"></script>
-    <script src="../Javascript/account.js"></script>
-    <script src="../Javascript/name.js"></script> -->
+    <script src="Javascript/login1.js"></script>
+    <script src="Javascript/account.js"></script>
+    <script src = "Javascript/name.js"></script>
   </body>
 </html>

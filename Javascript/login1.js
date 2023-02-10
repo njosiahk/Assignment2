@@ -1,8 +1,8 @@
 // INITIALISE CONSTANTS
-const dbURL = "https://team7njks-7c44.restdb.io/rest/login";
-// const dbURL = "https://team7assg2-2b5b.restdb.io/rest/login";
-const APIKEY = "63e217ae3bc6b255ed0c475f";
-// const APIKEY ="63d62e7f3bc6b255ed0c43df"
+// const dbURL = "https://team7njks-7c44.restdb.io/rest/login";
+const dbURL = "https://team7assg2-2b5b.restdb.io/rest/login";
+// const APIKEY = "63e217ae3bc6b255ed0c475f";
+const APIKEY ="63d62e7f3bc6b255ed0c43df"
 const image = document.createElement("img").src = "../HomePage/user.png";
 
 

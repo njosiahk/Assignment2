@@ -1,3 +1,5 @@
+
+console.log("hello")
 // INITIALISE CONSTANTS
 // const userAccount = localStorage.getItem("userAccount"); // TO TRACK OWN REWARDS
 // const dbURL = "https://team7njks-7c44.restdb.io/rest/login";
@@ -107,6 +109,10 @@ $(document).ready(function () {
   });
 });
 
+
+
+
+
 // $.ajax(settings).done(function (response) {
 //     limit = 3;
 //     let content = "";
@@ -125,3 +131,30 @@ $(document).ready(function () {
 
 // //   -1 is desc
 // //   1 is asc
+// let jsondata = {
+//   name: localStorage.getItem("name"),
+//   email: localStorage.getItem("userAccount"),
+//   password: localStorage.getItem("password"),
+//   moves: localStorage.getItem("moves"),
+//   score: 0,
+// };
+// const APIKEY1 = "63d62e7f3bc6b255ed0c43df";
+
+// console.log("huuhueqfefneo")
+//   var settings1 = {
+//     async: true,
+//     crossDomain: true,
+//     url: "https://team7assg2-2b5b.restdb.io/rest/login",
+//     method: "PUT",
+//     headers: {
+//       "content-type": "application/json",
+//       "x-apikey": APIKEY1,
+//       "cache-control": "no-cache",
+//     },
+//   };
+
+//   $.ajax(settings1).done(
+//   console.log("eofjwiufuiewfui")
+
+//     // console.log(response);
+//   );

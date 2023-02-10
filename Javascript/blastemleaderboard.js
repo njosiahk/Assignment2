@@ -32,6 +32,6 @@ $(document).ready(function () {
 
     $("#leaderboard-list tbody").html(content);
 
-    // console.log(response);
+    
   });
 });

@@ -65,11 +65,7 @@ function hideMole(moleItem) {
   }, 1000);
 }
 
-// if (countDown == 0){
-//   result.innerHTML = `<h2>You Won</h2>
-//   <h4>Moves: ${movesCount}</h4>`;
-//   localStorage.setItem("score",)
-// }
+
 var finalscore = scoreCount.innerHTML;
 console.log(finalscore);
 
@@ -78,8 +74,7 @@ console.log(scoreCount.innerText);
 console.log(scoreCount);
 sessionStorage.setItem("score", scoreCount);
 
-// var finalscore = document.getElementById("score-count");
-// console.log(points);
+
 
 
 $(document).ready(function () {
@@ -135,6 +130,6 @@ $(document).ready(function () {
     }
     $("#leaderboard-list tbody").html(content);
 
-    // console.log(response);
+    
   });
 });

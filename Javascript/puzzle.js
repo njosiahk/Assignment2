@@ -94,16 +94,7 @@ function dragEnd() {
   document.getElementById("turns").innerText = turns;
 }
 
-// tile.addEventListener("dragstart", dragStart);
 
-//  function validation(){
-
-//     let currImg = currTile.src;
-
-//      if (currTile.src.includes("")){
-
-//      }
-//  }
 
 while (currImg == currTile) {
   pdocument.getElementById("validation").innerHTML = validation;

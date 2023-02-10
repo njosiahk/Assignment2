@@ -297,75 +297,7 @@ input::placeholder {
   transition: 0.5s ease;
 }
 
-/* .delete:after {} */
 
-/* .formbox {
-  height: 670px;
-  width: 70%;
-  background-color: #ece8e1;
-  animation: 2s ease-out 0s lineUp;
-  background-color: red;
-}
-
-.rgHead {
-  text-align: center;
-  font-size: 40px;
-  position: relative;
-  top: -120px;
-  width: 90%;
-  left: 5%;
-  border-bottom: 4px solid black;
-}
-
-.entrybox {
-  border-radius: 25px;
-  border: hidden;
-  background-color: #666666;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 35%;
-  width: 605.65px;
-  height: 375px;
-}
-
-input::placeholder {
-  opacity: 50%;
-  position: relative;
-  left: -2%;
-  top: 1%;
-  font-family: "DINNextW1G";
-}
-
-.emailbox {
-  height: 100px;
-}
-
-.submit {
-  width: 75%;
-  padding: 4% 8%;
-  text-decoration: none;
-  margin: auto;
-  cursor: pointer;
-  position: relative;
-  font-size: 40px;
-  margin-top: 20px;
-  color: white !important;
-  background-color: black;
-  border: 2px solid rgba(168, 165, 160, 0.4);
-  border-radius: 14px;
-}
-
-.submit:hover {
-  background-color: #ff4655;
-}
-
-.swap {
-  position: relative;
-  left: 5.25%;
-  top: 1%;
-  font-size: 16px;
-} */
 /*Font CSS*/
 .valotext {
   color: black;

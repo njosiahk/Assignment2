@@ -12,6 +12,7 @@ My target audience of this website would be to the upcoming generation of gamers
 After doing some research, we found that this is because new players find the game difficult to navigate and the characters’ abilities confusing. We also found that the guns’ skins might be a little too expensive for some players.
 We hope that this website would be able to re-introduce and show how fun and enjoyable Valorant can still be for the upcoming new generation of gamers. We hope that they can give this game a try and another chance. We also hope that Valorant will be able to get more recognition and love from the upcoming new generation of gamers.  
 We feel that our project is the best way to help this game achieve its deserved recognition and attention from the upcoming new generation of gamers. This is because not only will our website contain 3 interactive mini games (Blast-Em, Duos and Puzzle) to attract the target audience, it will also be very informative and can provide more information on Valorant. For example, we have a News & Update page so that users can familiarise themselves with the current game changes, news and meta. We also have an Agent page so that users can know, understand, connect and familiarize themselves with all the agents in the game. We also have an arsenal page in our website where it shows every single weapon in the game so as to attract the users’ attention and arouse their interest. Last but not least, users can play 3 interactive games through this website and can have a chance for them to be shown in the leaderboards for other players to see! This can motivate users to be competitive so that they can FLEX their scores and moves to their friends. They can also redeem a promo code to utilize in-game and get skin discounts. 
+We have a Login and Register page form for users to be able to log in and play the games that we have. They must be logged in in order of them to be able to appear into the leaderboards for the Blast-Em game and the Duos game. 
 Therefore, we wanted to create a website for Valorant in hopes that it will make the game popular once again and also allow users to have fun while learning more about the game- Valorant.
 
 # User Stories
@@ -40,24 +41,30 @@ The Login page allow users to log in with their own account or allow new users t
 
 # Technologies Used
 
-• Visual Studio (HTML, CSS, JAVA SCRIPT)
+• Visual Studio (HTML, CSS, JAVA SCRIPT, API)
 • Adobe XD
 • Lottie Animations
 • API
 • restDB
 
-# Testing
+
 
 # Credits
 
 # Media
 
 _Insert all references link_
+Lottie animation: 
+
 https://lottiefiles.com/26169-grid
 <a href='https://pngtree.com/so/Gray'>Gray png from pngtree.com/</a>s
 https://www.nicepng.com/ourpic/u2q8o0q8i1o0a9a9_9188801-smoke-cloud-smoke-clouds/
 
-Agent:
+
+All wallpapers and backgrounds gotten from official website: https://playvalorant.com/en-gb/?gclid=CjwKCAiA85efBhBbEiwAD7oLQC_8h8KVBBP7Df_v0b47mjiHn_JOuEDsoF-7J8xTTewMuAeeeXQoZBoC7f8QAvD_BwE&gclsrc=aw.ds
+
+
+Agent page:
 
 Brimstone: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt26fcf1b5752514ee/5eb7cdbfc1dc88298d5d3799/V_AGENTS_587x900_Brimstone.png
 
@@ -107,7 +114,7 @@ CONTROLLER: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt63e2
 
 SENTINEL: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt72ffc2e48d4a7a58/5eaa06852b79652f27c31ff6/Sentinel.png
 
-Arsenal:
+Arsenal page:
 
 Sidearms
 Classic: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt25bf56ede3e3c57c/5eb281c42278aa3e8d0ba7fa/classic.png

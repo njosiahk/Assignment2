@@ -30,7 +30,7 @@ $(document).ready(function () {
 
       let accountExists = false;
       response.map((account) => {
-        // let responseID = account._id;
+       
         let responseEmail = account.email;
         console.log(responseEmail);
         let responsePwd = account.password;
@@ -48,27 +48,14 @@ $(document).ready(function () {
           console.log(name);
           accountExists = true;
           window.location = "index.html";
-          // console.log(localstorage.getItem("name"));
-
-          // if (document.title == "VALORANT WIKI: HOME"){
-          //     let user = document.getElementById("paraname");
-          //     console.log(user);
-          //     user.innerHTML += localStorage.getItem("name");
-          // }
-
+        
           var loginUsername = username;
           window.loginUsername = username;
           sessionStorage.setItem("name", loginUsername);
           sessionStorage.setItem("id", JSON.stringify(id));
           console.log(loginUsername);
 
-          // let user = document.getElementById("paraname");
-          // console.log(user);
-          // user.innerHTML += localStorage.getItem("name");
-          // accountExists = true;
-          // window.location.href = "index.html"
-
-          // console.log(localStorage.getItem("userAccount"));
+      
         }
       });
 
@@ -96,6 +83,3 @@ function ajaxFuncGET() {
   });
 }
 
-// if (localStorage.getItem("isLoggedIn") == "true"){
-//     $("i.fa fa-heart").innerText = localStorage.getItem("Name")
-// }

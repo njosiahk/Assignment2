@@ -1,6 +1,4 @@
-//store loginstatus into localstoragw
 
-// console.log("Praveen")
 $(document).ready(function(){
     let login = localStorage.getItem("loginStatus");
     console.log(login);
@@ -21,13 +19,4 @@ $("#delete").click(function(){
     // window.location.href = "index.html"
 })
 
-// var username = sessionStorage.getItem("name")
-// console.log(username)
-
-// function display(){
-//     document.getElementById("loginName").innerHTML = username 
-//     console.log(document.getElementById("loginName"))
-// }
-
-// window.onload = display()
 

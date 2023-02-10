@@ -42,7 +42,7 @@ The Login page allow users to log in with their own account or allow new users t
 
 • Visual Studio (HTML, CSS, JAVA SCRIPT)
 • Adobe XD
-• Bootstrap
+• Lottie Animations
 • API
 • restDB
 
@@ -98,6 +98,14 @@ Neon: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8093ba7b5e
 Fade: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt516d37c6c84fcda0/625db737c9aa404b76ddd594/Fade_Key_Art_587x900_for_Website.png
 
 Harbor: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt81e8a3e8c7beeaf3/634894a15e281916980f655b/Harbor_KeyArt-web.png
+
+DUELIST: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt213441880cf2cdf5/5eaa06851b51e36d7c1b61d4/Duelist.png
+
+INITIATOR: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt2965c8a8dce0467d/5eaa0685e6f6795e530a1cbe/Initiator.png
+
+CONTROLLER: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt63e21ca9443dce8e/5eb270f43b09c042ddca1353/Controller.png
+
+SENTINEL: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt72ffc2e48d4a7a58/5eaa06852b79652f27c31ff6/Sentinel.png
 
 Arsenal:
 
@@ -157,3 +165,9 @@ RGX: https://gumlet.assettype.com/afkgaming%2F2021-10%2F95685acf-92aa-4f8d-bb77-
 Prime: https://valorantstrike.com/wp-content/uploads/2020/06/Valorant-Prime-Collection.jpg
 
 Soulstrife: https://gumlet.assettype.com/afkgaming%2F2022-11%2F91f37405-d3a5-449c-a709-af3c03dcb433%2Fvalorant.jpeg?compress=true&dpr=1&w=1200
+
+Games:
+
+Jett Background: https://rare-gallery.com/394541-jett-valorant-game-4k-pc-wallpaper.html
+
+Omen Picture (For puzzle): https://preview.redd.it/g3xmssaudmv41.png?width=3840&format=png&auto=webp&s=51f25a5272a6a5693a35858a45910ae3b2325894

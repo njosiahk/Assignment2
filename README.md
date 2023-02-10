@@ -34,7 +34,7 @@ The Gun page allow users to view every single playable weapon in the game. They 
 
 The Quiz page contain an interactive game trivia for all users to play and participate in. They can earn points and see themselves on the leader board. These earned points can then be used to redeem a promo code where users can utilize to earn discounts from in-game skin purchases.
 
-The Games Page contain 3 games for users to be able to play and enjoy. Each mini game helps the user prepare for the actual Valorant gaming experience. For example, the Blast-Em game help trains the reaction speed of users and allow them to be able to handle the weapons and gameplay better in the actual game. The Duos game is a memory game that forces the users to think and allow them to know the different agents in the game. The puzzle game is a game that allows users to form a picture of an agent called Omen. 
+The Games Page contain 3 games for users to be able to play and enjoy. Each mini game helps the user prepare for the actual Valorant gaming experience. For example, the Blast-Em game help trains the reaction speed of users and allow them to be able to handle the weapons and gameplay better in the actual game. The Duos game is a memory game that forces the users to think and allow them to know the different agents in the game. The puzzle game is a game that allows users to form a picture of an agent called Omen.
 
 The Login page allow users to log in with their own account or allow new users to sign up their own account. This is required for them to access the website’s interactive games and earn points.
 
@@ -57,10 +57,9 @@ https://lottiefiles.com/26169-grid
 <a href='https://pngtree.com/so/Gray'>Gray png from pngtree.com/</a>s
 https://www.nicepng.com/ourpic/u2q8o0q8i1o0a9a9_9188801-smoke-cloud-smoke-clouds/
 
-
 Agent:
 
-Brimstone: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt26fcf1b5752514ee/5eb7cdbfc1dc88298d5d3799/V_AGENTS_587x900_Brimstone.png 
+Brimstone: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt26fcf1b5752514ee/5eb7cdbfc1dc88298d5d3799/V_AGENTS_587x900_Brimstone.png
 
 Viper: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc825c6589eda7717/5eb7cdc6ee88132a6f6cfc25/V_AGENTS_587x900_Viper.png
 
@@ -99,8 +98,6 @@ Neon: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8093ba7b5e
 Fade: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt516d37c6c84fcda0/625db737c9aa404b76ddd594/Fade_Key_Art_587x900_for_Website.png
 
 Harbor: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt81e8a3e8c7beeaf3/634894a15e281916980f655b/Harbor_KeyArt-web.png
-
-
 
 Arsenal:
 
@@ -150,3 +147,13 @@ Odin: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt0884ed7405
 Melee
 
 Tactical Knife: https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt133c8372261f21a9/5eb281cbedfeb076e205038b/tactical-knife.png
+
+Rewards:
+
+Magepunk: https://www.theloadout.com/wp-content/sites/theloadout/2021/08/valorant-skins.jpg
+
+RGX: https://gumlet.assettype.com/afkgaming%2F2021-10%2F95685acf-92aa-4f8d-bb77-19202d4eceb9%2FFA7kEGzWEAMDdr4.jpg?format=auto
+
+Prime: https://valorantstrike.com/wp-content/uploads/2020/06/Valorant-Prime-Collection.jpg
+
+Soulstrife: https://gumlet.assettype.com/afkgaming%2F2022-11%2F91f37405-d3a5-449c-a709-af3c03dcb433%2Fvalorant.jpeg?compress=true&dpr=1&w=1200

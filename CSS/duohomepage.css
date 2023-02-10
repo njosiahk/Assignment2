@@ -211,6 +211,48 @@ body {
   transition: 0.5s ease;
 }
 
+.prizebutton {
+  color: white !important;
+  background-color: black;
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  font-size: 60px;
+  text-align: center;
+  padding: 1% 3%;
+  border-radius: 13px;
+  border: hidden;
+  right: 5%;
+  top: 25%;
+  animation: 4s ease-out 0s lineUp;
+}
+
+.prizebutton:hover {
+  background-color: #ff4655;
+  transition: 0.5s ease;
+}
+
+.leaderboardbtn {
+  color: white !important;
+  background-color: black;
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  font-size: 60px;
+  text-align: center;
+  padding: 1% 2%;
+  border-radius: 13px;
+  border: hidden;
+  right: 5%;
+  top: 42.5%;
+  animation: 4s ease-out 0s lineUp;
+}
+
+.leaderboardbtn:hover {
+  background-color: #ff4655;
+  transition: 0.5s ease;
+}
+
 /*Font CSS*/
 .valotext {
   color: black;

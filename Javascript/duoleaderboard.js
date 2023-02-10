@@ -72,14 +72,14 @@
 // }
 
 $(document).ready(function () {
-  const APIKEY = "63e217ae3bc6b255ed0c475f";
-  // const APIKEY= "63d62e7f3bc6b255ed0c43df"; (NJK)
+  // const APIKEY = "63e217ae3bc6b255ed0c475f"; (Nic)
+  const APIKEY= "63d62e7f3bc6b255ed0c43df"; 
 
   var settings = {
     async: true,
     crossDomain: true,
-    // "url": "https://team7assg2-2b5b.restdb.io/rest/login",
-    url: "https://team7njks-7c44.restdb.io/rest/login?q={}&sort=moves&dir=1",
+    "url": "https://team7assg2-2b5b.restdb.io/rest/login",
+    // url: "https://team7njks-7c44.restdb.io/rest/login?q={}&sort=moves&dir=1",
     method: "GET",
     headers: {
       "content-type": "application/json",
@@ -119,7 +119,7 @@ $(document).ready(function () {
 
 //   });
 
-//   ?q={}&sort=score&dir=-1
+// ?q={}&sort=score&dir=-1
 
 //   ?q={}&sort=(table name i.e moves)&dir=-1
 

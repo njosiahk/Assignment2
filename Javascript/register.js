@@ -243,7 +243,7 @@
 //[STEP 0]: Make sure our document is A-OK
 $(document).ready(function () {
   //what kind of interface we want at the start
-  const APIKEY = "63e217ae3bc6b255ed0c475f";
+  // const APIKEY = "63e217ae3bc6b255ed0c475f";
   $(".successfulmsg").hide();
   //[STEP 1]: Create our submit form listener
   $("#register").submit(function (e) {
@@ -263,8 +263,8 @@ $(document).ready(function () {
       name: name,
       email: email,
       password: password,
-      moves:0,
-      score:0
+      moves: 0,
+      score: 0,
     };
 
     console.log(jsondata);
@@ -287,7 +287,7 @@ $(document).ready(function () {
 
     $.ajax(settings).done(function (response) {
       console.log(response);
-      window.location = "index.html"
+      window.location = "login1.html";
     });
     // beforeSend: function () {
     //   // if (username === ""  password1 === ""  password2 == "" || email === "") {

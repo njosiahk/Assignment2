@@ -34,6 +34,8 @@ The Gun page allow users to view every single playable weapon in the game. They 
 
 The Quiz page contain an interactive game trivia for all users to play and participate in. They can earn points and see themselves on the leader board. These earned points can then be used to redeem a promo code where users can utilize to earn discounts from in-game skin purchases.
 
+The Games Page contain 3 games for users to be able to play and enjoy. Each mini game helps the user prepare for the actual Valorant gaming experience. For example, the Blast-Em game help trains the reaction speed of users and allow them to be able to handle the weapons and gameplay better in the actual game. The Duos game is a memory game that forces the users to think and allow them to know the different agents in the game. The puzzle game is a game that allows users to form a picture of an agent called Omen. 
+
 The Login page allow users to log in with their own account or allow new users to sign up their own account. This is required for them to access the website’s interactive games and earn points.
 
 # Technologies Used

@@ -27,7 +27,7 @@
 //             let rankIcon = "";
 //             let name = leaderboardArray[i].name;
 //             let points = leaderboardArray[i].points;
-            
+
 //             if (i == 0) {
 //                 // rankIcon = "<img src=\"assets/img/rewards/leaderboard-first.png\"/>"
 //                 rankIcon = <img src="../Leaderboard_Images/—Pngtree—medal for first place icon_5152053.png"></img>
@@ -56,7 +56,6 @@
 //     });
 // });
 
-
 // // AJAX TO ACCESS DATABASE
 // function ajaxFuncGET() {
 //     return $.ajax({
@@ -72,45 +71,41 @@
 //     });
 // }
 
+$(document).ready(function () {
+  const APIKEY = "63e217ae3bc6b255ed0c475f";
+  // const APIKEY= "63d62e7f3bc6b255ed0c43df"; (NJK)
 
-$(document).ready(function(){
-    const APIKEY = "63e217ae3bc6b255ed0c475f";
-    // const APIKEY= "63d62e7f3bc6b255ed0c43df"; (NJK)
+  var settings = {
+    async: true,
+    crossDomain: true,
+    // "url": "https://team7assg2-2b5b.restdb.io/rest/login",
+    url: "https://team7njks-7c44.restdb.io/rest/login?q={}&sort=moves&dir=1",
+    method: "GET",
+    headers: {
+      "content-type": "application/json",
+      "x-apikey": APIKEY,
+      "cache-control": "no-cache",
+    },
+  };
 
-    var settings = {
-        "async": true,
-        "crossDomain": true,
-        // "url": "https://team7assg2-2b5b.restdb.io/rest/login",
-        "url":"https://team7njks-7c44.restdb.io/rest/login?q={}&sort=moves&dir=1",
-        "method": "GET",
-        "headers": {
-          "content-type": "application/json",
-          "x-apikey": APIKEY,
-          "cache-control": "no-cache"
-        }
-      }
-      
-      $.ajax(settings).done(function (response) {
-        limit = 7;
-        let content = "";
-        for (var i = 0; i < response.length && i < limit; i++){
-            var r = 0;
-            if (response[i].moves > 0){
-                content = `${content}<tr id='${response[i]._id}'><td>${ r + 1}</td><td>${response[i].name}</td>
+  $.ajax(settings).done(function (response) {
+    limit = 10;
+    let content = "";
+    for (var i = 0; i < response.length && i < limit; i++) {
+      var r = 0;
+      if (response[i].moves > 0) {
+        content = `${content}<tr id='${response[i]._id}'><td>${r + 1}</td><td>${
+          response[i].name
+        }</td>
             <td>${response[i].moves}</td>`;
-            }
-            
-        }
+      }
+    }
 
-        $("#leaderboard-list tbody").html(content);
-        
-        // console.log(response);
-      });
-    
-})
+    $("#leaderboard-list tbody").html(content);
 
-
-
+    // console.log(response);
+  });
+});
 
 // $.ajax(settings).done(function (response) {
 //     limit = 3;

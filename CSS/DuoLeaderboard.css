@@ -153,3 +153,87 @@ body {
     text-align: left;
   }
 }
+
+.valotext {
+  color: black;
+  font-family: "ValoFont";
+}
+.text {
+  color: black;
+  font-family: "TungstenBold", sans-serif;
+}
+.alttext {
+  color: black;
+  font-family: "DINNextW1G";
+}
+a {
+  text-decoration: none;
+}
+
+@keyframes lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  font-size: 60px;
+  width: 60%;
+  left: 20%;
+  top: 10px;
+  margin: 1%;
+  animation: 2.5s ease-out 0s lineUp;
+  background-color: #ece8e1;
+}
+
+#leaderboard {
+  position: relative;
+  /* margin-top: 2%; */
+}
+
+table {
+  background-color: #ece8e1;
+  text-transform: uppercase;
+  animation: 2s ease-out 0s lineUp;
+  border-spacing: 0px;
+}
+
+th {
+  background-color: #ff4655;
+  color: white;
+  border: #ff4655 4px solid;
+  border-collapse: collapse;
+  margin: 0;
+  font-size: 28px;
+}
+
+tr:nth-child(even) {
+  background-color: #ccc7c0;
+}
+
+#leaderboard-list {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  text-align: center;
+}
+
+td {
+  font-family: "DINNextW1G";
+  font-size: 24px;
+  padding: 8px;
+}

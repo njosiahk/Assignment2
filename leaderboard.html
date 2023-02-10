@@ -17,10 +17,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link href="CSS/account.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/DuoLeaderboard.css" rel="stylesheet" type="text/css" />
     <script src="Javascript/navbar.js" defer></script>
-    <script src="Javascript/arsenalSelector.js" defer></script>
-    <title>VALORANT WIKI: ARSENAL</title>
+    <title>VALORANT WIKI: DUOS LEADERBOARD</title>
   </head>
   <body>
     <div class="backline">
@@ -39,7 +38,7 @@
             </button>
             <div class="dropdown-content">
               <a class="menu text" href="blastem.html">BLAST-EM</a>
-              <a class="menu text" href="duohomepage.html">DUOS</a>
+              <a class="menu active text" href="duohomepage.html">DUOS</a>
               <a class="menu text" href="puzzlehomepage.html">PUZZLE</a>
             </div>
           </div>
@@ -85,15 +84,19 @@
           autoplay
           style="position: fixed; top: 0; z-index: -1"
         ></lottie-player>
-        <div id="leaderboard">
-          <table id="leaderboard-list">
-            <thead>
-              <th id="rank">Rank</th>
-              <th id="name">Name</th>
-              <th id="duopoints">Moves</th>
-            </thead><br>
-            <tbody></tbody>
-          </table>
+        <div class="container">
+          <h2 class="header alttext">LEADERBOARD: DUOS</h2>
+          <div id="leaderboard">
+            <table id="leaderboard-list">
+              <thead class="alttext">
+                <th id="rank">Rank</th>
+                <th id="name">Name</th>
+                <th id="duopoints">Moves</th>
+              </thead>
+              <br />
+              <tbody></tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -103,6 +106,6 @@
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
     ></script>
-    <script src="./Javascript/duoleaderboard.js"></script>
+    <script src="../Javascript/duoleaderboard.js"></script>
   </body>
 </html>

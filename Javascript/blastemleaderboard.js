@@ -5,8 +5,8 @@ $(document).ready(function () {
   var settings = {
     async: true,
     crossDomain: true,
-    url: "https://team7assg2-2b5b.restdb.io/rest/login?q={}&sort=score&dir=1",
-    // url: "https://team7njks-7c44.restdb.io/rest/login?q={}&sort=score&dir=1",
+    url: "https://team7assg2-2b5b.restdb.io/rest/login?q={}&sort=score&dir=-1",
+    // url: "https://team7njks-7c44.restdb.io/rest/login?q={}&sort=score&dir=-1",
     method: "GET",
     headers: {
       "content-type": "application/json",

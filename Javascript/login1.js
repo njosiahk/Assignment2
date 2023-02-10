@@ -37,6 +37,7 @@ $(document).ready(function () {
           let username = account.name;
           localStorage.setItem("name", username);
           localStorage.setItem("userAccount", uEmail);
+          localStorage.setItem("password",uPwd)
           localStorage.setItem("loginStatus", true);
           alert("Login successful!");
           // window.location.assign("blastem.html");

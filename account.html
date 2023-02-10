@@ -81,61 +81,19 @@
         autoplay
         style="position: fixed; top: 0; z-index: -1"
       ></lottie-player>
-      <!-- <div class="formbox">
-        <form id="register">
-          <h2 class="alttext rgHead">PROFILE</h2>
-          <div class="entrybox">
-            <div class="emailbox">
-              <label class="alttext title" for="loginEmail">EMAIL ADDRESS</label
-              ><br />
-              <input
-                type="email"
-                id="loginEmail"
-                required
-                placeholder="Email Address"
-              />
-              <div class="alttext hint">
-                We'll never share your email with anyone else.
-              </div>
-            </div>
-            <div class="passbox">
-              <label class="alttext title" for="loginPassword">PASSWORD</label
-              ><br />
-              <input
-                type="password"
-                id="loginPassword"
-                required
-                placeholder="Password"
-              />
-              <div class="alttext hint">
-                Minimum password length: 8 characters
-              </div>
-            </div>
-            <div class="swap alttext">
-              Don't have an account?<a
-                href="register.html"
-                style="color: dodgerblue"
-                >Register Here.</a
-              >
-            </div>
-            <button type="submit" id="loginSubmit" class="submit alttext">
-              LOGIN
-            </button>
-          </div>
-        </form>
-      </div> -->
+      
       <div class="header"><h1 class="alttext">PROFILE</h1></div>
       <div class="infobox">
         <div class="leftbox">
           <div class="mailbox">
             <h2 class="alttext title">EMAIL ADDRESS:</h2>
             <br />
-            <div class="alttext display">EMAIL</div>
+            <div class="alttext display" id = "emailaddress" style = "color:white; position: absolute; font-size: 25px;">email</div>
           </div>
           <div class="namebox">
             <h2 class="alttext title">USERNAME:</h2>
             <br />
-            <div class="alttext display">USERNAME</div>
+            <div class="alttext display" id = "acctName" style = "color:white; position: absolute; font-size: 25px;">Username</div>
           </div>
         </div>
         <div class="rightbox">
@@ -169,8 +127,8 @@
               Minimum password length: 8 characters
             </div> -->
           </div>
-          <button class="btn alttext confirm">CONFIRM CHANGES</button>
-          <button class="btn alttext delete">DELETE ACCOUNT</button>
+          <button id="confirm">CONFIRM CHANGES</button>
+          <button id="delete">LOG OUT ACCOUNT</button>
         </div>
       </div>
     </div>

@@ -121,11 +121,13 @@ const matrixGenerator = (cardValues, size = 4) => {
             //check if winCount ==half of cardValues
             if (winCount == Math.floor(cardValues.length / 2)) {
               result.innerHTML = `<h2>You Won</h2>
-            <h4>Moves: ${movesCount}</h4>`;
-            localStorage.setItem("moves",movesCount)
-
+              <h4>Moves: ${movesCount}</h4>`;
+            
               stopGame();
+            
             }
+            localStorage.setItem("moves",movesCount)
+            
           } else {
             //if the cards dont match
             //flip the cards back to normal
@@ -162,6 +164,31 @@ startButton.addEventListener("click", () => {
     // const APIKEY = "63e217ae3bc6b255ed0c475f";(Nic)
     // const APIKEY= "63d62e7f3bc6b255ed0c43df";  (jk)
     const APIKEY = "63e63506478852088da6801f";
+
+
+    let id = JSON.parse(sessionStorage.getItem("id"));
+
+    let movesCount= JSON.parse(localStorage.getItem("moves"));
+
+    var jsondata = { "moves": movesCount };
+    var settings = {
+      async: true,
+      crossDomain: true,
+      // url: `https://team7assg2-2b5b.restdb.io/rest/login/${id}`,
+      url: `https://team7finaltestassg2-46c0.restdb.io/rest/login/${id}`,
+      method: "PATCH",
+      headers: {
+        "content-type": "application/json",
+        "x-apikey": APIKEY,
+        "cache-control": "no-cache",
+      },
+      processData: false,
+      data: JSON.stringify(jsondata),
+    };
+
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+    });
 
     var settings = {
         "async": true,

@@ -8,6 +8,9 @@ let startGame,
 const timeCount = document.getElementById("time-count");
 const scoreCount = document.getElementById("score-count");
 
+
+
+
 gameContainer.addEventListener("click", function (e) {
   if (e.target.classList.contains("mole-clicked")) {
     score++;
@@ -62,23 +65,32 @@ function hideMole(moleItem) {
   }, 1000);
 }
 
-function gunMover() {
-  const gunImage = document.querySelector(".gun");
+// if (countDown == 0){
+//   result.innerHTML = `<h2>You Won</h2>
+//   <h4>Moves: ${movesCount}</h4>`;
+//   localStorage.setItem("score",)
+// }
+var finalscore = scoreCount.innerHTML;
+console.log(finalscore);
 
-  document.addEventListener("mousemove", function (event) {
-    gun.style.top = event.clientY + "px";
-    gun.style.left = event.clientX + "px";
-  });
-}
+
+console.log(scoreCount.innerText);
+console.log(scoreCount);
+sessionStorage.setItem("score", scoreCount);
+
+// var finalscore = document.getElementById("score-count");
+// console.log(points);
+
 
 $(document).ready(function () {
   // const APIKEY = "63e217ae3bc6b255ed0c475f"; //(nic)
   // const APIKEY = "63d62e7f3bc6b255ed0c43df"; //(team7asg2)
   const APIKEY = "63e63506478852088da6801f";
 
-  let id = sessionStorage.getItem("id");
+  let id = JSON.parse(sessionStorage.getItem("id"));
+  let scoreCount= JSON.parse(sessionStorage.getItem("score"));
 
-  var jsondata = { score: score };
+  var jsondata = {"score": scoreCount};
   var settings = {
     async: true,
     crossDomain: true,
@@ -103,7 +115,7 @@ $(document).ready(function () {
     crossDomain: true,
     // url: "https://team7assg2-2b5b.restdb.io/rest/login?q={}&sort=score&dir=1",
     // url: "https://team7njks-7c44.restdb.io/rest/login?q={}&sort=scire&dir=1",
-    url: "https://team7finaltestassg2-46c0.restdb.io/rest/login?q={}&sort=score&dir=1",
+    url: "https://team7finaltestassg2-46c0.restdb.io/rest/login?q={}&sort=score&dir=-1",
     method: "GET",
     headers: {
       "content-type": "application/json",

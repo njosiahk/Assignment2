@@ -1,0 +1,285 @@
+@font-face {
+  font-family: "ValoFont";
+  src: url(../Fonts/Valorant\ Font.ttf);
+}
+
+@font-face {
+  font-family: "TungstenBold";
+  src: url(../Fonts/FontsFree-Net-Tungsten-Bold.ttf);
+}
+
+@font-face {
+  font-family: "DINNextW1G";
+  src: url(../Fonts/DINNextW1G-Bold.ttf);
+}
+
+/*Navbar CSS*/
+
+.index {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #ece8e1;
+}
+
+.backimg {
+  opacity: 10%;
+  position: fixed;
+  width: 100%;
+  top: 0; /*remove if fixed navbar*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -2;
+}
+
+.navbar {
+  background-color: black;
+  overflow: hidden;
+  padding-bottom: 0px;
+  height: 90px;
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar a {
+  display: flex;
+  float: left;
+  color: white;
+  padding: 21px 26px;
+  font-size: 40px;
+}
+
+.active {
+  color: #ff4655 !important;
+}
+
+.highlight {
+  background-color: #242424 !important;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 40px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 21px 26px;
+  background-color: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #292929;
+  min-width: 146px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: black;
+  color: #ff4655;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(22, 22, 22);
+  color: #ff4655;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navbar.responsive .dropdown {
+    float: none;
+  }
+  .navbar.responsive .dropdown-content {
+    position: relative;
+  }
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@keyframes lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/*Font CSS*/
+.valotext {
+  color: black;
+  font-family: "ValoFont";
+}
+.text {
+  color: black;
+  font-family: "TungstenBold", sans-serif;
+}
+.alttext {
+  color: black;
+  font-family: "DINNextW1G";
+}
+
+a {
+  text-decoration: none;
+}
+
+.reward-flex {
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  left: 20%;
+  margin-top: 4.5%;
+  overflow: hidden;
+  animation: 2s ease-out 0s lineUp;
+}
+
+.card {
+  width: 39%;
+  height: auto;
+  position: relative;
+  border: 0.75px solid rgba(168, 165, 160, 0.4);
+  background-color: rgba(236, 232, 225, 0.8);
+}
+
+.rewardimg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(255, 70, 85, 1);
+}
+
+.bundlename {
+  position: absolute;
+  /* top: 5px;
+  left: 20px; */
+  width: 100%;
+  text-align: center;
+  font-size: 58px;
+}
+
+.purchasebox {
+  position: absolute;
+  width: 40%;
+  left: 30%;
+  top: 40%;
+}
+
+.price {
+  font-size: 36px;
+  text-align: center;
+}
+
+.buy {
+  color: white;
+  background-color: black;
+  position: relative;
+  left: 10%;
+  font-size: 30px;
+  text-align: center;
+  padding: 10% 22%;
+  border-radius: 13px;
+  border: hidden;
+  border: 4px black solid;
+}
+
+.card:hover .bundlename {
+  color: white;
+  transition: 0.5s ease-out;
+}
+
+.card:hover .price {
+  color: white;
+  transition: 0.5s ease-out;
+}
+
+.card:hover .buy {
+  transition: 0.5s ease-out;
+}
+
+.buy:hover {
+  background-color: green;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
